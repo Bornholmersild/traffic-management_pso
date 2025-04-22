@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <!-- Vehicle Types -->
+    <vType id="car" accel="2.5" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="50"/>
+
+    <!-- Define Routes -->
+    <route id="l_straight" edges="E1 E6"/>
+    <route id="l_left" edges="E1 E4"/>
+    <route id="l_right" edges="E1 E8"/>
+    
+    <route id="r_straight" edges="E5 E2"/>
+    <route id="r_left" edges="E5 E8"/>
+    <route id="r_right" edges="E5 E4"/>
+
+    <route id="t_straight" edges="E3 E8"/>
+    <route id="t_left" edges="E3 E2"/>
+    <route id="t_right" edges="E3 E6"/>
+
+    <route id="b_straight" edges="E7 E4"/>
+    <route id="b_left" edges="E7 E2"/>
+    <route id="b_right" edges="E7 E6"/>
+    
+    <!-- Generate Vehicles with Probability -->
+    <!-- Number of vehicles = spawn_limit/sim_step * probability-->
+    <!-- Here 400 vehicles in total-->
+    <flow id="flow1" type="car" begin="0" end="400" route="l_straight" probability="0.1"/>
+    <flow id="flow2" type="car" begin="0" end="400" route="l_left" probability="0.075"/>
+    <flow id="flow3" type="car" begin="0" end="400" route="l_right" probability="0.075"/>
+
+    
+    <flow id="flow4" type="car" begin="0" end="400" route="b_straight" probability="0.1"/>
+    <flow id="flow5" type="car" begin="0" end="400" route="b_left" probability="0.075"/>
+    <flow id="flow6" type="car" begin="0" end="400" route="b_right" probability="0.075"/>
+
+    <flow id="flow7" type="car" begin="0" end="400" route="t_straight" probability="0.1"/>
+    <flow id="flow8" type="car" begin="0" end="400" route="t_left" probability="0.075"/>
+    <flow id="flow9" type="car" begin="0" end="400" route="t_right" probability="0.075"/>
+
+    <flow id="flow10" type="car" begin="0" end="400" route="r_straight" probability="0.1"/>
+    <flow id="flow11" type="car" begin="0" end="400" route="r_left" probability="0.075"/>
+    <flow id="flow12" type="car" begin="0" end="400" route="r_right" probability="0.075"/>
+    
+</routes>
+

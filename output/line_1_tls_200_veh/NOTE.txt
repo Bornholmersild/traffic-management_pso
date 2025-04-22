@@ -1,0 +1,23 @@
+World and routes:
+network = ["sumo/world_line_1_tls.net.xml", "sumo/vehicles_line_1_tls.rou.xml"]
+
+One lane with 1 traffic light
+World map is 600 meters
+All lanes is set to 50 km/h allowed speed
+
+param:
+    sim_iterations=500,
+    num_particles=10,
+    iterations_max=20,
+    w_max=0.5,
+    w_min=0.1,
+    c1=2,
+    c2=2,
+    phase_min=5,
+    phase_max=50,
+    lamda_factor=0.5,
+    gui_on=True
+
+routes flow:
+    <flow id="flow_lane0" type="car" route="route" begin="0" end="400" period="2"/>
+    

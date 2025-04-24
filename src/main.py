@@ -7,17 +7,18 @@ if __name__ == "__main__":
     #network = ["sumo/world_cross_1_tls_2_phases.net.xml", "sumo/vehicles_cross_1_tls.rou.xml"]
     #network = ["sumo/world_cross_1_tls_2_phases_2_lanes.net.xml", "sumo/vehicles_cross_1_tls_2_phases_2_lanes.rou.xml"]
     #network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes_heavyload.rou.xml"]
-    network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes.rou.xml"]
+    #network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes.rou.xml"]
+    network = ["sumo/debug.net.xml", "sumo/debug.rou.xml"]
 
     base_path_to_save = "output"
     
-    indenpendent_run = 2
+    indenpendent_run = 1
     for run in range(indenpendent_run):
         pso = PSO_TrafficOptimizer(
                                 network,
                                 sim_iterations=500,
-                                num_particles=10,
-                                iterations_max=40,
+                                num_particles=1,        # 10
+                                iterations_max=2,       # 40
                                 w_max=0.5,
                                 w_min=0.1,
                                 c1=2,
@@ -25,7 +26,7 @@ if __name__ == "__main__":
                                 phase_min=10,
                                 phase_max=40,
                                 lamda_factor=0.5,
-                                gui_on=False
+                                gui_on=True
                                 )
         
         pso.run(run, base_path_to_save)

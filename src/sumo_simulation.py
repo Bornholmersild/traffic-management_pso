@@ -15,8 +15,7 @@ class TrafficSimulation:
         self.total_wait_time = 0
         self.arrived_vehicles = 0
         self.non_arrived_vehicles = 0
-        self.existing_vehicles = set()
-        self.departed_vehicles = {}
+        self.veh_stats = {} 
 
         self.sumo_cmd = self._configure_sumo_cmd(file_network, gui_on)
 
@@ -29,7 +28,7 @@ class TrafficSimulation:
         """Runs SUMO simulation and tracks vehicle data."""
         for step in range(self.sim_iterations):
             traci.simulationStep()
-            self.update_traffic_data()
+            self.update_traffic_data(step)
 
     def start_sumo(self):
         try:
@@ -41,41 +40,46 @@ class TrafficSimulation:
         """End simulation"""
         traci.close()
 
-    def update_traffic_data(self):
+    def update_traffic_data(self, step):
         """Updates traffic statistics per step."""
         arrived_vehicles = traci.simulation.getArrivedNumber()
         departed_vehicles = traci.simulation.getDepartedNumber()
-        current_time = traci.simulation.getTime()
+        current_time = step + 1
 
         if arrived_vehicles > 0:
             self.arrived_vehicles += arrived_vehicles
-            self.total_trip_time += self.track_arrived_vehicles(current_time)
-
+            self.track_arrived_vehicles(current_time)
+            
         if departed_vehicles > 0:
             self.track_departed_vehicles()
 
-        
         for veh_id in traci.vehicle.getIDList():
             if traci.vehicle.getWaitingTime(veh_id) > 0:
-                self.total_wait_time += 1
+                self.veh_stats[veh_id]['wait_time'] += 1 
         
         if current_time == self.sim_iterations:
-            self.non_arrived_vehicles = len(self.existing_vehicles)
+            for veh_id in traci.vehicle.getIDList():
+                self.non_arrived_vehicles += 1
 
     def track_arrived_vehicles(self, current_time):
         """Calculates total trip time for arrived vehicles."""
         trip_time = 0
+        wait_time = 0
         for veh_id in traci.simulation.getArrivedIDList():
-            if veh_id in self.existing_vehicles:
-                trip_time += current_time - self.departed_vehicles.pop(veh_id, 0)
-                self.existing_vehicles.remove(veh_id)
-        return trip_time
+            trip_time += current_time - self.veh_stats[veh_id]["departure_time"]
+            wait_time += self.veh_stats[veh_id]["wait_time"]
+            self.veh_stats.pop(veh_id, None)
+
+        self.total_trip_time += trip_time
+        self.total_wait_time += wait_time
 
     def track_departed_vehicles(self):
         """Records vehicle departure times."""
         for veh_id in traci.simulation.getDepartedIDList():
-            self.existing_vehicles.add(veh_id)
-            self.departed_vehicles[veh_id] = traci.vehicle.getDeparture(veh_id)
+            self.veh_stats[veh_id] = {
+                "departure_time": traci.vehicle.getDeparture(veh_id),
+                "wait_time": 0.0
+            }
 
     def extract_tls(self):
         """Extract total number of traffic lights and phases"""

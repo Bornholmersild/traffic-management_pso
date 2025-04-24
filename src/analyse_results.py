@@ -494,14 +494,15 @@ def plot_hist_for_metrics(base_paths, num_files, save_path="output"):
 
 #plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_simpleFitness",5)
 #plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_complexFitness", 5)
-plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_fullFitness", 5)
+#plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_fullFitness", 5)
+plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_VFitness", 5)
 
 #plot_metrics_from_multiple_csvs("output/logging_run", "output", 4)
-plot_metrics_from_csv("output/logging_run1.csv", "output")
+#plot_metrics_from_csv("output/logging_run1.csv", "output")
 #calculate_mean_std("output/logging_run", 4)
 #calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", 5)
 #calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", 5)
 #calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run", 5)
 
-hist_base_path = ["output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"]
+hist_base_path = ["output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"]
 plot_hist_for_metrics(hist_base_path, 5)

@@ -221,13 +221,13 @@ class PSO_TrafficOptimizer:
 
         return P 
     
-    def initialize_particles(self):
+    def initialize_particles(self, seed):
         """ Initialize swarm with random traffic light durations."""
+        
         #particles = np.random.randint(self.phase_min, self.phase_max, size=(self.num_particles, self.num_lights * self.num_phases))
-        particles = np.random.randint(self.phase_min, self.phase_max, size=(self.num_particles, self.num_lights * self.num_phases))
+        rng = np.random.default_rng(seed)
+        particles = rng.integers(low=self.phase_min, high=self.phase_max, size=(self.num_particles, self.num_lights * self.num_phases))
         velocities = np.zeros((self.num_particles, self.num_lights * self.num_phases))
-        #print("Particle 0 (reshaped):\n", particles[0].reshape(self.num_lights, self.num_phases))
-        #print("Particle 0 (reshaped):\n", velocities[0].reshape(self.num_lights, self.num_phases))
 
         return particles, velocities
 

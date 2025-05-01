@@ -1,24 +1,35 @@
 from pso_traffic_optimizer import PSO_TrafficOptimizer
-#from analyse_results import plot_metrics_from_multiple_csvs, plot_metrics_from_csv
 
 if __name__ == "__main__":    
     #network = ["sumo/world_line_1_tls.net.xml", "sumo/vehicles_line_1_tls.rou.xml"]
     #network = ["sumo/world_line_10_tls.net.xml", "sumo/vehicles_line_10_tls.rou.xml"]
-    #network = ["sumo/world_cross_1_tls_2_phases.net.xml", "sumo/vehicles_cross_1_tls.rou.xml"]
+
+    #network = ["sumo/world_cross_1_tls_2_phases.net.xml", "sumo/cross_world_debug_tester.rou.xml"]
     #network = ["sumo/world_cross_1_tls_2_phases_2_lanes.net.xml", "sumo/vehicles_cross_1_tls_2_phases_2_lanes.rou.xml"]
+
+    network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes.rou.xml"]
     #network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes_heavyload.rou.xml"]
-    #network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes.rou.xml"]
-    network = ["sumo/debug.net.xml", "sumo/debug.rou.xml"]
 
     base_path_to_save = "output"
+
     
+    #-------------------------------------------------------------------------------------#
+    # NOTE: 
+    # The seeds are used to generate the random number generator and 
+    # need to be chanced if not all indenpendent runs are executed at once!!!
     indenpendent_run = 1
-    for run in range(indenpendent_run):
+    seeds = [1, 2, 3, 4, 5]                
+    #-------------------------------------------------------------------------------------#
+
+    for run in range(indenpendent_run, 5):
+        seed = seeds[run]
+        
         pso = PSO_TrafficOptimizer(
                                 network,
-                                sim_iterations=500,
-                                num_particles=1,        # 10
-                                iterations_max=2,       # 40
+                                random_seed=seed,
+                                sim_iterations=500,     # 500
+                                num_particles=10,        # 10
+                                iterations_max=40,       # 40
                                 w_max=0.5,
                                 w_min=0.1,
                                 c1=2,

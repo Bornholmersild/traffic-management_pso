@@ -1,34 +1,47 @@
 import traci
 import numpy as np
-import os
-import csv
 import logging
-
-import traci.traciToHex
+import xml.etree.ElementTree as ET
+import random
+from sumolib.net import readNet
 
 class TrafficSimulation:
     """Handles SUMO traffic simulation and collects relevant data."""
     
-    def __init__(self, file_network, sim_iterations, gui_on=False):
+    def __init__(self, file_network, sim_iterations, random_seed, gui_on=False):
         self.sim_iterations = sim_iterations
         self.total_trip_time = 0
         self.total_wait_time = 0
         self.arrived_vehicles = 0
         self.non_arrived_vehicles = 0
         self.veh_stats = {} 
-
+        self.vehicle_routes = {}
+        self.shuffled_veh_ids = []
+        self.tree = ET.parse(file_network[1])       # Load the .rou.xml file 
+        self.root = self.tree.getroot()
+        self.seed = random_seed
         self.sumo_cmd = self._configure_sumo_cmd(file_network, gui_on)
+
+        self.depart_custom = 0
+        self.veh_departed = 0
 
     def _configure_sumo_cmd(self, file_network, gui_on):
         """Configures SUMO command based on GUI preference."""
         mode = "sumo-gui" if gui_on else "sumo"
-        return [mode, "--time-to-teleport", "-1", "-n", file_network[0], "-r", file_network[1]]        
-
+        #return [mode, "--time-to-teleport", "-1", "-n", file_network[0], "-r", file_network[1]]        
+        return [mode, "--time-to-teleport", "-1", "-n", file_network[0]]        # Vehicles are added via Traci - Cause shuffling
+            
     def run_simulation(self):
         """Runs SUMO simulation and tracks vehicle data."""
+        self.vehicle_routes, self.shuffled_veh_ids = self.extract_vehicles()               # Extract vehicles from the .rou.xml file
         for step in range(self.sim_iterations):
+            if len(self.vehicle_routes) > self.veh_departed:                                          # Pass if total amount of vehicles is exceeded
+                self.add_random_vehicles(self.vehicle_routes, self.shuffled_veh_ids, step)
             traci.simulationStep()
             self.update_traffic_data(step)
+        
+        self.depart_custom = 0
+        self.veh_departed = 0
 
     def start_sumo(self):
         try:
@@ -148,3 +161,92 @@ class TrafficSimulation:
             # Set initial phase duration **immediately**
             current_phase = traci.trafficlight.getPhase(tls)  # Get the current phase index
             traci.trafficlight.setPhaseDuration(tls, clip_phases[current_phase].duration)   
+
+    def add_random_vehicles(self, vehicle_routes, shuffled_veh_ids, sim_step):
+        '''
+        Add vehicles to the simulation at a specific simulation step.
+
+        Param:
+            vehicle_routes   : Dictionary with vehicle IDs as keys and their routes as values - Extracted using : extract_vehicles()
+            shuffled_veh_ids : List of shuffled vehicle IDs - Extracted using : extract_vehicles()
+            sim_step         : Simulation step to add vehicles
+            shuffle          : Boolean to shuffle vehicle IDs
+        '''    
+        
+        spawn_time = sim_step                           # + random.randint(0, 1)  # Random delay (0-5s)
+        veh_id = shuffled_veh_ids[sim_step]
+        route = vehicle_routes[veh_id]
+        
+        traci.vehicle.add(vehID=veh_id, 
+                            routeID="",
+                            depart=self.depart_custom)
+        self.depart_custom += 1
+        self.veh_departed += 1
+        # Assign edges to the vehicle
+        traci.vehicle.setRoute(veh_id, route)
+            
+    def extract_vehicles(self):
+        '''
+        return:
+            vehicle_routes   : Extract vehicles from the .rou.xml file
+            shuffled_veh_ids : Create a dictionary with vehicle IDs and their routes and shuffle them
+        '''
+        # Extract vehicles
+        vehicle_routes = {}
+        for vehicle in self.root.findall("vehicle"):
+            veh_id = vehicle.get("id")
+            route = vehicle.find("route").get("edges").split()
+            vehicle_routes[veh_id] = route
+        
+        # Shuffle vehicle IDs
+        rng = np.random.default_rng(self.seed)
+        shuffled_veh_ids = list(vehicle_routes.keys())
+        rng.shuffle(shuffled_veh_ids)
+        
+        return vehicle_routes, shuffled_veh_ids
+    
+    def set_seed(self, seed):
+        """
+        Set the new seed for the simulation.
+
+        Param:
+            seed : seed value
+        """
+        self.seed = seed
+
+    def generate_random_routes(self, net_file, rou_file, num_vehicles=100):
+        net = readNet(net_file)
+        #edges = [e.getID() for e in net.getEdges() if not e.isSpecial()]  
+        depart = ['-E12', '-E17', 'E22', '-E21', 'E19', '-E18', 'E13', 'E11']
+        arrive = ['E12', 'E17', '-E22', 'E21', '-E19', 'E18', '-E13', '-E11']
+        
+        
+        with open(rou_file, 'w') as f:
+            f.write('<?xml version="1.0" encoding="UTF-8"?>\n\n')
+            f.write('<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">\n')
+            f.write('    <vType id="car" accel="2.5" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="50"/>\n\n')
+
+            for i in range(num_vehicles):
+                start_edge = random.choice(depart)
+                end_edge = random.choice(arrive)
+
+                while start_edge == end_edge:
+                    end_edge = random.choice(arrive)
+
+                f.write(f'    <vehicle id="veh{i}" type="car" depart="{i}">\n')
+                f.write(f'        <route edges="{start_edge} ')
+                
+                # Now compute a valid path using net.findShortestPath (Dijkstra)
+                connect_route, _ = net.getShortestPath(net.getEdge(start_edge), net.getEdge(end_edge))
+                existing_ids = {start_edge, end_edge}
+
+                for edge in connect_route:
+                    edge_id = edge.getID()
+                    if edge_id not in existing_ids:
+                        f.write(f'{edge_id} ')
+                
+                f.write(f'{end_edge}"/>\n')
+                f.write(f'    </vehicle>\n')
+
+            f.write('</routes>')
+

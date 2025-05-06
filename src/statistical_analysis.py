@@ -29,7 +29,7 @@ def check_normality(data):
 
 def kruskal_test(metric, grouped_data):
     # Perform Kruskal-Wallis test
-    stat, p = kruskal(*grouped_data)  # Replace with your actual groups
+    stat, p = kruskal(*grouped_data)  
     print(f'\nMetric: {metric}')
     print('Kruskal-Wallis test statistic=%.5f, p=%.5f' % (stat, p))
 
@@ -71,7 +71,7 @@ for base_path in cost_paths:                            # Iterate over cost func
                 # Extract last 5 iteration data
                 last_iteration_data = metric_data[metric_data['Iteration'] == metric_data['Iteration'].max()]
                 # Calculate mean and std for the last 5 values
-                results[metric][i - 1] = last_iteration_data['Mean'].tolist()[0]
+                results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
         
         for metric in metrics:
             cost_results[metric].append(results[metric])  # Append this cost function's data

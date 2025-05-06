@@ -125,7 +125,7 @@ def plot_metrics_from_multiple_csvs(base_path, save_path, num_files):
     plt.xlabel('Iteration')
     plt.ylabel('Fitness')
     plt.title('Fitness Over Iterations (All Runs)')
-    plt.xlim(0, 40)
+    plt.xlim(0, 39)
     plt.gca().xaxis.set_major_locator(MultipleLocator(x_step))
     plt.legend()
     fitness_save_path = os.path.join(save_path, "fitness_all_runs.png")
@@ -156,7 +156,7 @@ def plot_metrics_from_multiple_csvs(base_path, save_path, num_files):
     ax1.set_xlabel('Iteration')
     ax1.set_ylabel('Number of Vehicles')
     ax1.set_title('Arrived Vehicles Over Iterations (All Runs)')
-    ax1.set_xlim(0, 40)
+    ax1.set_xlim(0, 39)
     ax1.xaxis.set_major_locator(MultipleLocator(x_step))
     ax1.legend()
 
@@ -164,7 +164,7 @@ def plot_metrics_from_multiple_csvs(base_path, save_path, num_files):
     ax2.set_xlabel('Iteration')
     ax2.set_ylabel('Number of Vehicles')
     ax2.set_title('Non-Arrived Vehicles over Iterations (All Runs)')
-    ax2.set_xlim(0, 40)
+    ax2.set_xlim(0, 39)
     ax2.xaxis.set_major_locator(MultipleLocator(x_step))
     ax2.legend()
 
@@ -199,7 +199,7 @@ def plot_metrics_from_multiple_csvs(base_path, save_path, num_files):
     ax1.set_xlabel('Iteration')
     ax1.set_ylabel('Seconds')
     ax1.set_title('Total Trip Time Over Iterations (All Runs)')
-    ax1.set_xlim(0, 40)
+    ax1.set_xlim(0, 39)
     ax1.xaxis.set_major_locator(MultipleLocator(x_step))
     ax1.legend()
 
@@ -207,7 +207,7 @@ def plot_metrics_from_multiple_csvs(base_path, save_path, num_files):
     ax2.set_xlabel('Iteration')
     ax2.set_ylabel('Seconds')
     ax2.set_title('Total Wait Time Over Iterations (All Runs)')
-    ax2.set_xlim(0, 40)
+    ax2.set_xlim(0, 39)
     ax2.xaxis.set_major_locator(MultipleLocator(x_step))
     ax2.legend()
 
@@ -478,14 +478,14 @@ def plot_hist_for_metrics_across_runs(base_paths, num_files, save_path="output")
 
     for idx, metric in enumerate(metrics):
         ax = axes[idx]
-        ax.bar(x_positions, overall_mean[metric], yerr=overall_std[metric], capsize=5, color=['skyblue', 'orange', 'green'], alpha=0.7)
+        ax.bar(x_positions, overall_mean[metric], yerr=overall_std[metric], color=['skyblue', 'orange', 'green', 'red'], capsize=5, alpha=0.7)
         ax.set_xticks(x_positions)
         ax.set_xticklabels([f'{xlabel_txt[i]}' for i in range(len(base_paths))], fontsize=20)
         ax.set_title(f'{metric.capitalize()}', fontsize=24)
         ax.set_ylabel('Mean Value', fontsize=20)
 
     plt.tight_layout()
-    save_path = os.path.join(save_path, "grid_world_last_mean_results.png")
+    save_path = os.path.join(save_path, "validation_across_cost.png")
     plt.savefig(save_path)
     plt.close()
     plt.show()
@@ -545,12 +545,18 @@ def plot_hist_for_metrics_across_particles(base_paths, num_files, save_path="out
     save_path = os.path.join(save_path, "metrics_bar_plots.png")
     plt.savefig(save_path)
     plt.close()
-    
-#plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_simpleFitness",5)
-#plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_complexFitness", 5)
-#plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_fullFitness", 5)
-#plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run", "output/grid_5_tls_2_lanes_400_veh_VFitness", 5)
-plot_metrics_from_multiple_csvs("output/logging_run", "output", 5)
+
+grid_V = "output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run"
+grid_simple = "output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run"
+grid_complex = "output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run"
+grid_full = "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"
+#plot_metrics_from_multiple_csvs(grid_V, "output/grid_5_tls_2_lanes_400_veh_VFitness", 5)
+#plot_metrics_from_multiple_csvs(grid_simple, "output/grid_5_tls_2_lanes_400_veh_simpleFitness",5)
+#plot_metrics_from_multiple_csvs(grid_complex, "output/grid_5_tls_2_lanes_400_veh_complexFitness", 5)
+plot_metrics_from_multiple_csvs(grid_full, "output/grid_5_tls_2_lanes_400_veh_fullFitness", 5)
+#plot_metrics_from_multiple_csvs("output/logging_run", "output", 5)
+
+plot_metrics_from_csv("output/grid_5_tls_2_lanes_400_veh_VFitness", "output/grid_5_tls_2_lanes_400_veh_VFitness")
 
 # calculate_mean_std("output/cross_1_tls_2_lanes_400_veh/logging_run", 5)
 # calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run", 5)
@@ -563,5 +569,7 @@ plot_metrics_from_multiple_csvs("output/logging_run", "output", 5)
 #                   "output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", 
 #                   "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"]
 
-hist_base_path = "output/logging_run"
-plot_hist_for_metrics_across_particles(hist_base_path, 5)
+
+hist_base_path = [grid_V, grid_simple, grid_complex, grid_full]
+plot_hist_for_metrics_across_particles(grid_full, 5, "output")
+plot_hist_for_metrics_across_runs(hist_base_path, 5, "output")

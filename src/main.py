@@ -17,13 +17,14 @@ if __name__ == "__main__":
     # NOTE: 
     # The seeds are used to generate the random number generator and 
     # need to be chanced if not all indenpendent runs are executed at once!!!
-    indenpendent_run = 1
-    seeds = [1, 2, 3, 4, 5]                
+    indenpendent_run = 3
+    seeds = [1, 2, 3, 4, 5]  
+    seeds = [3, 4, 5]              
     #-------------------------------------------------------------------------------------#
-
-    for run in range(indenpendent_run, 5):
+    
+    for run in range(indenpendent_run):
         seed = seeds[run]
-        
+        print(f"Run nr: {run} and seed value: {seed}")
         pso = PSO_TrafficOptimizer(
                                 network,
                                 random_seed=seed,
@@ -37,7 +38,7 @@ if __name__ == "__main__":
                                 phase_min=10,
                                 phase_max=40,
                                 lamda_factor=0.5,
-                                gui_on=True
+                                gui_on=False
                                 )
         
         pso.run(run, base_path_to_save)

@@ -1,241 +1,247 @@
-Iteration	Metric	Mean	Std
-0	fitness	1.1785519295149065e-05	2.4014549931531392e-06
-0	global_fitness	8.599857242369777e-06	N/A
-0	arrived_vehicles	295.8	29.73482806407328
-0	non_arrived_vehicles	84.2	20.917934888511343
-0	total_trip_time	31676.1	3298.6526779883934
-0	total_wait_time	15789.6	1603.1071205630647
-1	fitness	9.256524318387751e-06	7.144166146136167e-07
-1	global_fitness	8.353102342209896e-06	N/A
-1	arrived_vehicles	329.4	12.443472184241825
-1	non_arrived_vehicles	56.4	10.594338110519224
-1	total_trip_time	34739.1	2007.905149652244
-1	total_wait_time	16684.9	1655.2444200177808
-2	fitness	8.988080758192992e-06	5.391560680324807e-07
-2	global_fitness	8.25736557008852e-06	N/A
-2	arrived_vehicles	334.0	9.919677414109795
-2	non_arrived_vehicles	54.9	10.520931517693668
-2	total_trip_time	35488.0	857.0712922505338
-2	total_wait_time	17090.3	544.0829072852777
-3	fitness	9.382564151470874e-06	1.08571820487971e-06
-3	global_fitness	8.25736557008852e-06	N/A
-3	arrived_vehicles	328.0	17.815723392554116
-3	non_arrived_vehicles	57.8	15.593588426016636
-3	total_trip_time	34806.4	1378.3373462255167
-3	total_wait_time	16794.9	779.1153252247065
-4	fitness	9.179486839591e-06	9.95856021263734e-07
-4	global_fitness	8.163265306122448e-06	N/A
-4	arrived_vehicles	331.4	16.650525517232182
-4	non_arrived_vehicles	55.4	15.298365925810508
-4	total_trip_time	34643.6	1728.2365694545408
-4	total_wait_time	16490.8	854.5932131722086
-5	fitness	8.54366134574355e-06	5.108301343056983e-07
-5	global_fitness	7.38421550094518e-06	N/A
-5	arrived_vehicles	342.6	10.678951259369995
-5	non_arrived_vehicles	47.4	8.2365041127896
-5	total_trip_time	35712.1	941.282470887459
-5	total_wait_time	16707.5	839.7657113743094
-6	fitness	8.885027638457805e-06	1.1897740447308455e-06
-6	global_fitness	7.38421550094518e-06	N/A
-6	arrived_vehicles	337.4	19.504871186449808
-6	non_arrived_vehicles	49.9	15.102648774304459
-6	total_trip_time	33925.4	2320.001689654557
-6	total_wait_time	15447.4	1213.4001153782704
-7	fitness	8.246297015138916e-06	1.2428313495948658e-06
-7	global_fitness	7.0733363512901765e-06	N/A
-7	arrived_vehicles	350.7	22.34300785480773
-7	non_arrived_vehicles	46.3	19.58085799958725
-7	total_trip_time	37396.8	1300.3565511043498
-7	total_wait_time	17702.6	960.3106997217099
-8	fitness	8.085741113474466e-06	9.179586444494139e-07
-8	global_fitness	6.7465002529937596e-06	N/A
-8	arrived_vehicles	353.3	19.25123372669918
-8	non_arrived_vehicles	44.5	16.524224641416613
-8	total_trip_time	37882.5	2122.653115796361
-8	total_wait_time	17935.3	1739.4631384424333
-9	fitness	8.091962736959858e-06	8.23418891590747e-07
-9	global_fitness	6.7465002529937596e-06	N/A
-9	arrived_vehicles	352.9	17.885468962260955
-9	non_arrived_vehicles	43.1	13.560604706280618
-9	total_trip_time	37580.3	2154.172233132718
-9	total_wait_time	17819.8	1844.4980780689364
-10	fitness	6.984818773337134e-06	6.258066331027412e-07
-10	global_fitness	6.47462916561454e-06	N/A
-10	arrived_vehicles	379.4	15.4220621189256
-10	non_arrived_vehicles	18.6	11.394735626595292
-10	total_trip_time	35604.7	1089.109365490904
-10	total_wait_time	14624.2	1026.824795181729
-11	fitness	6.967323197107489e-06	3.582571868429157e-07
-11	global_fitness	6.47462916561454e-06	N/A
-11	arrived_vehicles	379.2	9.15204895091804
-11	non_arrived_vehicles	20.8	9.15204895091804
-11	total_trip_time	36031.7	1015.7677933464913
-11	total_wait_time	14930.9	1183.6379894207519
-12	fitness	7.485198675452026e-06	9.228495305739475e-07
-12	global_fitness	6.47462916561454e-06	N/A
-12	arrived_vehicles	367.4	20.674622124720926
-12	non_arrived_vehicles	31.2	18.701871564097534
-12	total_trip_time	35502.1	1230.0942606158278
-12	total_wait_time	15235.8	974.1451431896584
-13	fitness	7.05135895629283e-06	4.840171722214064e-07
-13	global_fitness	6.47462916561454e-06	N/A
-13	arrived_vehicles	377.2	12.039933554633928
-13	non_arrived_vehicles	22.7	11.79872874508097
-13	total_trip_time	35199.3	885.4971541456246
-13	total_wait_time	14418.3	779.7066179018874
-14	fitness	6.799576666470053e-06	1.8668136619591214e-07
-14	global_fitness	6.47462916561454e-06	N/A
-14	arrived_vehicles	383.6	5.141984052872976
-14	non_arrived_vehicles	16.4	5.141984052872977
-14	total_trip_time	35456.7	1036.9364541764362
-14	total_wait_time	14394.3	980.4825393651843
-15	fitness	6.954058142460341e-06	3.6693274420274657e-07
-15	global_fitness	6.47462916561454e-06	N/A
-15	arrived_vehicles	379.6	9.850888284819801
-15	non_arrived_vehicles	20.3	9.69587541174081
-15	total_trip_time	35681.3	955.8138992502674
-15	total_wait_time	14718.2	685.2721795024223
-16	fitness	6.985721187674182e-06	4.4658330251849383e-07
-16	global_fitness	6.47462916561454e-06	N/A
-16	arrived_vehicles	378.9	11.527792503337315
-16	non_arrived_vehicles	21.1	11.527792503337317
-16	total_trip_time	35251.4	1012.9151198397623
-16	total_wait_time	14438.0	588.2091464776793
-17	fitness	6.928865556625728e-06	3.227649808829074e-07
-17	global_fitness	6.47462916561454e-06	N/A
-17	arrived_vehicles	380.2	8.623224454924038
-17	non_arrived_vehicles	19.8	8.623224454924038
-17	total_trip_time	35499.4	913.642731049725
-17	total_wait_time	14664.8	636.6805792546212
-18	fitness	6.848796609835704e-06	3.0881528633535165e-07
-18	global_fitness	6.47462916561454e-06	N/A
-18	arrived_vehicles	382.4	8.475848040166836
-18	non_arrived_vehicles	17.6	8.475848040166836
-18	total_trip_time	36670.3	1248.3429857214724
-18	total_wait_time	15560.1	1306.912732358209
-19	fitness	6.768341524173726e-06	1.9728815807728075e-07
-19	global_fitness	6.47462916561454e-06	N/A
-19	arrived_vehicles	384.5	5.572252686302013
-19	non_arrived_vehicles	15.5	5.572252686302013
-19	total_trip_time	36169.6	1388.1679437301525
-19	total_wait_time	14944.8	1158.8907454976072
-20	fitness	6.908559791070838e-06	4.4426691752394423e-07
-20	global_fitness	6.47462916561454e-06	N/A
-20	arrived_vehicles	381.0	11.349008767288886
-20	non_arrived_vehicles	18.8	10.84250893474384
-20	total_trip_time	36686.6	742.4638981122247
-20	total_wait_time	15561.3	697.8277796132796
-21	fitness	6.741622817298918e-06	1.385065474233296e-07
-21	global_fitness	6.47462916561454e-06	N/A
-21	arrived_vehicles	385.2	3.9446165846632035
-21	non_arrived_vehicles	14.8	3.9446165846632044
-21	total_trip_time	36086.0	587.9326492039713
-21	total_wait_time	14839.2	532.2570431661754
-22	fitness	6.717002632510302e-06	1.3165656639455548e-07
-22	global_fitness	6.47462916561454e-06	N/A
-22	arrived_vehicles	385.9	3.7802116342871597
-22	non_arrived_vehicles	14.1	3.7802116342871597
-22	total_trip_time	35174.0	947.2510754810469
-22	total_wait_time	14056.2	773.3866820679032
-23	fitness	6.919759025947894e-06	2.290734218124421e-07
-23	global_fitness	6.47462916561454e-06	N/A
-23	arrived_vehicles	380.3	6.0835844697020525
-23	non_arrived_vehicles	19.7	6.0835844697020525
-23	total_trip_time	35579.3	944.7020747304412
-23	total_wait_time	14619.6	957.1319867186552
-24	fitness	6.724753227646366e-06	2.379018268206275e-07
-24	global_fitness	6.441804736014842e-06	N/A
-24	arrived_vehicles	385.8	6.7201190465645775
-24	non_arrived_vehicles	14.2	6.7201190465645775
-24	total_trip_time	36084.7	622.643886985169
-24	total_wait_time	14871.3	509.06012415037975
-25	fitness	6.7546270070967565e-06	9.981144193345633e-08
-25	global_fitness	6.441804736014842e-06	N/A
-25	arrived_vehicles	384.8	2.85657137141714
-25	non_arrived_vehicles	15.2	2.85657137141714
-25	total_trip_time	36268.6	939.0447486674956
-25	total_wait_time	15074.2	873.5104807613932
-26	fitness	6.909913127411373e-06	1.6312497262850033e-07
-26	global_fitness	6.441804736014842e-06	N/A
-26	arrived_vehicles	380.5	4.5
-26	non_arrived_vehicles	19.5	4.5
-26	total_trip_time	35419.1	631.7783551214777
-26	total_wait_time	14530.9	616.9469101956828
-27	fitness	6.765448409185028e-06	2.828442312845794e-07
-27	global_fitness	6.441804736014842e-06	N/A
-27	arrived_vehicles	384.7	7.6817966648434535
-27	non_arrived_vehicles	15.3	7.6817966648434535
-27	total_trip_time	36264.8	1032.3995156914789
-27	total_wait_time	14923.4	1048.2394955352522
-28	fitness	6.860446533938188e-06	6.132312308852908e-07
-28	global_fitness	6.441804736014842e-06	N/A
-28	arrived_vehicles	382.8	15.276125163142648
-28	non_arrived_vehicles	16.4	13.245376551838758
-28	total_trip_time	35541.4	1324.0938939516336
-28	total_wait_time	14545.0	791.4630755758603
-29	fitness	6.6815331062736e-06	1.0016725505546585e-07
-29	global_fitness	6.441804736014842e-06	N/A
-29	arrived_vehicles	386.9	2.9137604568666933
-29	non_arrived_vehicles	13.1	2.913760456866693
-29	total_trip_time	35645.2	424.8566346427934
-29	total_wait_time	14430.9	350.16865936288474
-30	fitness	6.745813354238746e-06	1.5992956654408335e-07
-30	global_fitness	6.441804736014842e-06	N/A
-30	arrived_vehicles	385.1	4.5265881191025095
-30	non_arrived_vehicles	14.9	4.5265881191025095
-30	total_trip_time	36429.7	959.9157306763964
-30	total_wait_time	15093.5	979.5189890961788
-31	fitness	6.966156608734547e-06	6.327750668380872e-07
-31	global_fitness	6.441804736014842e-06	N/A
-31	arrived_vehicles	379.9	15.181897114655994
-31	non_arrived_vehicles	19.7	14.085808461000738
-31	total_trip_time	35703.1	1140.0902990552986
-31	total_wait_time	14745.8	945.4884240433619
-32	fitness	6.731280342313879e-06	1.4301820404233075e-07
-32	global_fitness	6.441804736014842e-06	N/A
-32	arrived_vehicles	385.5	4.080441152620633
-32	non_arrived_vehicles	14.5	4.080441152620633
-32	total_trip_time	35934.6	837.6507864259426
-32	total_wait_time	14699.6	890.4740535243012
-33	fitness	6.766394676278004e-06	1.4505173296324897e-07
-33	global_fitness	6.441804736014842e-06	N/A
-33	arrived_vehicles	384.5	4.129164564412516
-33	non_arrived_vehicles	15.5	4.129164564412516
-33	total_trip_time	35566.6	768.8570998566639
-33	total_wait_time	14378.9	504.2587530226917
-34	fitness	6.7690870084460505e-06	2.1521749887076905e-07
-34	global_fitness	6.441804736014842e-06	N/A
-34	arrived_vehicles	384.5	6.00416522091123
-34	non_arrived_vehicles	15.5	6.00416522091123
-34	total_trip_time	35467.9	906.6911767520405
-34	total_wait_time	14386.2	714.1804813910837
-35	fitness	6.720320430513603e-06	1.2664647937308114e-07
-35	global_fitness	6.441804736014842e-06	N/A
-35	arrived_vehicles	385.8	3.6
-35	non_arrived_vehicles	14.2	3.6
-35	total_trip_time	35753.7	751.8469325600789
-35	total_wait_time	14568.2	653.7159627850615
-36	fitness	6.743111020999023e-06	1.8450709555893123e-07
-36	global_fitness	6.441804736014842e-06	N/A
-36	arrived_vehicles	385.2	5.0556898639058145
-36	non_arrived_vehicles	14.8	5.055689863905815
-36	total_trip_time	36004.7	945.5929409634994
-36	total_wait_time	14776.4	841.4985680320556
-37	fitness	6.709453173714507e-06	1.0970971399785993e-07
-37	global_fitness	6.441804736014842e-06	N/A
-37	arrived_vehicles	386.1	3.144837038703278
-37	non_arrived_vehicles	13.9	3.144837038703278
-37	total_trip_time	35642.7	909.5417582497244
-37	total_wait_time	14385.4	828.6621989689163
-38	fitness	6.876028468049798e-06	6.041739875181654e-07
-38	global_fitness	6.409229290177856e-06	N/A
-38	arrived_vehicles	382.3	14.553693689232295
-38	non_arrived_vehicles	17.6	14.263239463740346
-38	total_trip_time	35578.2	969.7825323236132
-38	total_wait_time	14578.7	350.76090146993295
-39	fitness	6.733435041188015e-06	9.155209403983905e-08
-39	global_fitness	6.409229290177856e-06	N/A
-39	arrived_vehicles	385.4	2.615339366124404
-39	non_arrived_vehicles	14.6	2.6153393661244038
-39	total_trip_time	35633.6	458.19694455550444
-39	total_wait_time	14413.2	281.48385388863784
+Iteration	Metric	Value
+0	fitness	1.0541406645302749e-05
+0	global_fitness	1.0541406645302749e-05
+0	arrived_vehicles	308
+0	non_arrived_vehicles	67
+0	total_trip_time	31907.0
+0	total_wait_time	15985.0
+1	fitness	1.2939288856684436e-05
+1	global_fitness	1.0541406645302749e-05
+1	arrived_vehicles	278
+1	non_arrived_vehicles	102
+1	total_trip_time	33368.0
+1	total_wait_time	19208.0
+2	fitness	9.072434315575554e-06
+2	global_fitness	9.072434315575554e-06
+2	arrived_vehicles	332
+2	non_arrived_vehicles	66
+2	total_trip_time	38341.0
+2	total_wait_time	20581.0
+3	fitness	8.65051903114187e-06
+3	global_fitness	8.65051903114187e-06
+3	arrived_vehicles	340
+3	non_arrived_vehicles	60
+3	total_trip_time	37491.0
+3	total_wait_time	19486.0
+4	fitness	1.0679653124866504e-05
+4	global_fitness	8.65051903114187e-06
+4	arrived_vehicles	306
+4	non_arrived_vehicles	91
+4	total_trip_time	34147.0
+4	total_wait_time	18064.0
+5	fitness	9.765625e-06
+5	global_fitness	8.65051903114187e-06
+5	arrived_vehicles	320
+5	non_arrived_vehicles	75
+5	total_trip_time	38102.0
+5	total_wait_time	20865.0
+6	fitness	9.888849333491555e-06
+6	global_fitness	8.65051903114187e-06
+6	arrived_vehicles	318
+6	non_arrived_vehicles	79
+6	total_trip_time	36139.0
+6	total_wait_time	19612.0
+7	fitness	9.182736455463728e-06
+7	global_fitness	8.65051903114187e-06
+7	arrived_vehicles	330
+7	non_arrived_vehicles	68
+7	total_trip_time	35372.0
+7	total_wait_time	18407.0
+8	fitness	8.964107712718276e-06
+8	global_fitness	8.65051903114187e-06
+8	arrived_vehicles	334
+8	non_arrived_vehicles	66
+8	total_trip_time	36044.0
+8	total_wait_time	18623.0
+9	fitness	8.857709750566894e-06
+9	global_fitness	8.65051903114187e-06
+9	arrived_vehicles	336
+9	non_arrived_vehicles	63
+9	total_trip_time	34228.0
+9	total_wait_time	17080.0
+10	fitness	9.127335456960049e-06
+10	global_fitness	8.65051903114187e-06
+10	arrived_vehicles	331
+10	non_arrived_vehicles	69
+10	total_trip_time	37234.0
+10	total_wait_time	19692.0
+11	fitness	8.305027032862993e-06
+11	global_fitness	8.305027032862993e-06
+11	arrived_vehicles	347
+11	non_arrived_vehicles	52
+11	total_trip_time	34103.0
+11	total_wait_time	16044.0
+12	fitness	8.7016298152644e-06
+12	global_fitness	8.305027032862993e-06
+12	arrived_vehicles	339
+12	non_arrived_vehicles	61
+12	total_trip_time	36826.0
+12	total_wait_time	19245.0
+13	fitness	7.71604938271605e-06
+13	global_fitness	7.71604938271605e-06
+13	arrived_vehicles	360
+13	non_arrived_vehicles	40
+13	total_trip_time	35259.0
+13	total_wait_time	16399.0
+14	fitness	8.54963920522554e-06
+14	global_fitness	7.71604938271605e-06
+14	arrived_vehicles	342
+14	non_arrived_vehicles	55
+14	total_trip_time	33525.0
+14	total_wait_time	15914.0
+15	fitness	7.802503042976187e-06
+15	global_fitness	7.71604938271605e-06
+15	arrived_vehicles	358
+15	non_arrived_vehicles	42
+15	total_trip_time	37964.0
+15	total_wait_time	19060.0
+16	fitness	7.71604938271605e-06
+16	global_fitness	7.71604938271605e-06
+16	arrived_vehicles	360
+16	non_arrived_vehicles	40
+16	total_trip_time	37138.0
+16	total_wait_time	17842.0
+17	fitness	7.5890383929452295e-06
+17	global_fitness	7.5890383929452295e-06
+17	arrived_vehicles	363
+17	non_arrived_vehicles	37
+17	total_trip_time	36358.0
+17	total_wait_time	17088.0
+18	fitness	7.631024693995909e-06
+18	global_fitness	7.5890383929452295e-06
+18	arrived_vehicles	362
+18	non_arrived_vehicles	38
+18	total_trip_time	36371.0
+18	total_wait_time	17339.0
+19	fitness	7.5890383929452295e-06
+19	global_fitness	7.5890383929452295e-06
+19	arrived_vehicles	363
+19	non_arrived_vehicles	37
+19	total_trip_time	36543.0
+19	total_wait_time	17183.0
+20	fitness	7.673360394717659e-06
+20	global_fitness	7.5890383929452295e-06
+20	arrived_vehicles	361
+20	non_arrived_vehicles	39
+20	total_trip_time	35971.0
+20	total_wait_time	16999.0
+21	fitness	7.71604938271605e-06
+21	global_fitness	7.5890383929452295e-06
+21	arrived_vehicles	360
+21	non_arrived_vehicles	40
+21	total_trip_time	35294.0
+21	total_wait_time	16555.0
+22	fitness	7.5890383929452295e-06
+22	global_fitness	7.5890383929452295e-06
+22	arrived_vehicles	363
+22	non_arrived_vehicles	37
+22	total_trip_time	35977.0
+22	total_wait_time	16850.0
+23	fitness	7.547397657287767e-06
+23	global_fitness	7.547397657287767e-06
+23	arrived_vehicles	364
+23	non_arrived_vehicles	36
+23	total_trip_time	35691.0
+23	total_wait_time	16614.0
+24	fitness	7.38421550094518e-06
+24	global_fitness	7.38421550094518e-06
+24	arrived_vehicles	368
+24	non_arrived_vehicles	32
+24	total_trip_time	37314.0
+24	total_wait_time	17805.0
+25	fitness	7.802503042976187e-06
+25	global_fitness	7.38421550094518e-06
+25	arrived_vehicles	358
+25	non_arrived_vehicles	42
+25	total_trip_time	37128.0
+25	total_wait_time	17854.0
+26	fitness	7.547397657287767e-06
+26	global_fitness	7.38421550094518e-06
+26	arrived_vehicles	364
+26	non_arrived_vehicles	36
+26	total_trip_time	36242.0
+26	total_wait_time	17252.0
+27	fitness	7.226268932824604e-06
+27	global_fitness	7.226268932824604e-06
+27	arrived_vehicles	372
+27	non_arrived_vehicles	28
+27	total_trip_time	38185.0
+27	total_wait_time	18480.0
+28	fitness	7.226268932824604e-06
+28	global_fitness	7.226268932824604e-06
+28	arrived_vehicles	372
+28	non_arrived_vehicles	28
+28	total_trip_time	37362.0
+28	total_wait_time	17772.0
+29	fitness	7.2652770613407345e-06
+29	global_fitness	7.226268932824604e-06
+29	arrived_vehicles	371
+29	non_arrived_vehicles	29
+29	total_trip_time	38383.0
+29	total_wait_time	18482.0
+30	fitness	7.0733363512901765e-06
+30	global_fitness	7.0733363512901765e-06
+30	arrived_vehicles	376
+30	non_arrived_vehicles	24
+30	total_trip_time	37702.0
+30	total_wait_time	17913.0
+31	fitness	6.71158957287444e-06
+31	global_fitness	6.71158957287444e-06
+31	arrived_vehicles	386
+31	non_arrived_vehicles	14
+31	total_trip_time	38061.0
+31	total_wait_time	17390.0
+32	fitness	7.465137806443907e-06
+32	global_fitness	6.71158957287444e-06
+32	arrived_vehicles	366
+32	non_arrived_vehicles	34
+32	total_trip_time	37838.0
+32	total_wait_time	18760.0
+33	fitness	6.925207756232687e-06
+33	global_fitness	6.71158957287444e-06
+33	arrived_vehicles	380
+33	non_arrived_vehicles	20
+33	total_trip_time	38055.0
+33	total_wait_time	17681.0
+34	fitness	7.111111111111111e-06
+34	global_fitness	6.71158957287444e-06
+34	arrived_vehicles	375
+34	non_arrived_vehicles	25
+34	total_trip_time	37139.0
+34	total_wait_time	17374.0
+35	fitness	7.111111111111111e-06
+35	global_fitness	6.71158957287444e-06
+35	arrived_vehicles	375
+35	non_arrived_vehicles	25
+35	total_trip_time	37776.0
+35	total_wait_time	17761.0
+36	fitness	7.111111111111111e-06
+36	global_fitness	6.71158957287444e-06
+36	arrived_vehicles	375
+36	non_arrived_vehicles	25
+36	total_trip_time	36868.0
+36	total_wait_time	17271.0
+37	fitness	6.781684027777777e-06
+37	global_fitness	6.71158957287444e-06
+37	arrived_vehicles	384
+37	non_arrived_vehicles	16
+37	total_trip_time	38222.0
+37	total_wait_time	17530.0
+38	fitness	7.2652770613407345e-06
+38	global_fitness	6.71158957287444e-06
+38	arrived_vehicles	371
+38	non_arrived_vehicles	29
+38	total_trip_time	37529.0
+38	total_wait_time	17755.0
+39	fitness	6.817143753110322e-06
+39	global_fitness	6.71158957287444e-06
+39	arrived_vehicles	383
+39	non_arrived_vehicles	17
+39	total_trip_time	38493.0
+39	total_wait_time	17953.0
+40	fitness	7.5060987051979735e-06
+40	global_fitness	6.71158957287444e-06
+40	arrived_vehicles	365
+40	non_arrived_vehicles	35
+40	total_trip_time	38430.0
+40	total_wait_time	19048.0

@@ -87,8 +87,8 @@ class PSO_TrafficOptimizer:
 
         #return 1/(V*V)
         #return (self.simulation.total_wait_time) / (V*V)
-        #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V)
-        return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V + P)
+        return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V)
+        #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V + P)
     
     def update_best_particle(self, fitness, particle_idx):
         """Update current particle if fitness cost is lower"""

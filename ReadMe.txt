@@ -4,7 +4,10 @@ Create random vechicles and routes
 Create grid world
     netgenerate --grid --grid.number=10 --grid.length=400 --output-file=MySUMOFile.net.xml
 
+How to install sumo:
 
+sudo apt update
+sudo apt install sumo sumo-tools sumo-doc
 
 NOTES:
 Straight line world with multiple traffic lights.

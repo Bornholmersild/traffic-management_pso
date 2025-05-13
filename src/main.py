@@ -34,9 +34,9 @@ if __name__ == "__main__":
         pso = PSO_TrafficOptimizer(
                                 network,
                                 random_seed=seed,
-                                sim_iterations=1500,     # 500
+                                sim_iterations=1500,     # 1500
                                 num_particles=10,        # 10
-                                iterations_max=100,       # 40
+                                iterations_max=100,       # 100
                                 w_max=0.5,
                                 w_min=0.1,
                                 c1=2,
@@ -44,7 +44,7 @@ if __name__ == "__main__":
                                 phase_min=10,
                                 phase_max=40,
                                 lamda_factor=0.5,
-                                gui_on=True
+                                gui_on=False
                                 )
         
         pso.run(run, base_path_to_save)

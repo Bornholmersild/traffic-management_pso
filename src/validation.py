@@ -91,8 +91,8 @@ def extract_global_fitness(filename, num_files=5):
     return global_fitness
 
 # Example usage
-file_path_to_particle_log = "output/grid_5_tls_2_lanes_400_veh_fullFitness/particle_log.csv"
-file_path_to_logging_run = "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"
+file_path_to_particle_log = "output/odense_VFitness/particle_log.csv"
+file_path_to_logging_run = "output/odense_VFitness/logging_run"
 
 # Extract phase for global particle at 200 iteration. Stored in a array (1, 5)
 # Extract global fitness for 5 independent runs. Stored in a array (1, 5)
@@ -100,7 +100,7 @@ data = extract_global_particle(file_path_to_particle_log)
 global_fitness = extract_global_fitness(file_path_to_logging_run)
 
 # Execute 5 validation runs for each independent run. Total of 25 validation runs
-for indenpendent_run in range(5):
+for indenpendent_run in range(1):
     # Extract global particle for each independent run
     global_particle = data[indenpendent_run][1]
 

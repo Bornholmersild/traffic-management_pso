@@ -2,7 +2,6 @@ import numpy as np
 import os
 import csv
 from sumo_simulation import TrafficSimulation
-import traci
 
 class PSO_TrafficOptimizer:
     """Optimizes SUMO traffic light timings using Particle Swarm Optimization (PSO)."""
@@ -24,6 +23,7 @@ class PSO_TrafficOptimizer:
         self.phase_max = phase_max
         self.lamda_factor = lamda_factor
         self.seed = random_seed
+        self.rng = np.random.default_rng(self.seed)
 
         self.num_lights, self.num_phases = self.simulation.extract_tls()
         self.particles, self.velocities = self.initialize_particles()
@@ -36,8 +36,7 @@ class PSO_TrafficOptimizer:
 
     def initialize_particles(self):
         """Initializes swarm with random traffic light durations."""
-        rng = np.random.default_rng(self.seed)
-        particles = rng.integers(low=self.phase_min, high=self.phase_max, size=(self.num_particles, self.num_phases))
+        particles = self.rng.integers(low=self.phase_min, high=self.phase_max, size=(self.num_particles, self.num_phases))
         velocities = np.zeros((self.num_particles, self.num_phases))
         return particles, velocities
 
@@ -92,9 +91,9 @@ class PSO_TrafficOptimizer:
         V = max(self.simulation.arrived_vehicles, 0.00001)  # Avoid division by zero
 
         #return 1/(V*V)
-        #return (self.simulation.total_wait_time) / (V*V)
+        return (self.simulation.total_wait_time) / (V*V)
         #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V)
-        return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V + P)
+        #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V + P)
     
     def update_best_particle(self, fitness, particle_idx):
         """Update current particle if fitness cost is lower"""
@@ -115,7 +114,7 @@ class PSO_TrafficOptimizer:
 
         temp_particle = self.particles[i] + self.velocities[i]      # Temperal particle position before floor/ceil rounding
 
-        round_prob = np.random.rand(self.num_phases)                # One random probability per phase
+        round_prob = self.rng.random(self.num_phases)               # One random probability per phase               
         temp_particle = np.where(round_prob <= self.lamda_factor,
                                     np.floor(temp_particle),
                                     np.ceil(temp_particle))

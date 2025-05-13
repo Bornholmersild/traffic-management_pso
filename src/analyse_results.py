@@ -11,7 +11,7 @@ import glob
 # Set global font size
 plt.rc('font', size=18)
 
-x_step = 5  # step size for x-axis plot
+x_step = 2  # step size for x-axis plot
 
 def plot_metrics_from_csv(file_path, save_path):
     """
@@ -31,11 +31,8 @@ def plot_metrics_from_csv(file_path, save_path):
     # Plot 1: Fitness
     fitness_data = df[df['Metric'] == 'fitness']
     plt.figure(figsize=(8, 6))  # 8, 6
-    plt.plot(fitness_data['Iteration'], fitness_data['Mean'], label='Fitness', color='blue')
-    plt.fill_between(fitness_data['Iteration'], 
-                     fitness_data['Mean'] - fitness_data['Std'], 
-                     fitness_data['Mean'] + fitness_data['Std'], 
-                     color='blue', alpha=0.1, label='Std Dev')
+    plt.plot(fitness_data['Iteration'], fitness_data['Value'], label='Fitness', color='blue')
+  
     plt.xlabel('Iteration')
     plt.ylabel('Fitness')
     plt.title('Fitness Over Iterations')
@@ -53,16 +50,10 @@ def plot_metrics_from_csv(file_path, save_path):
     # First subplot: Arrived and Non-Arrived Vehicles
     arrived_data = df[df['Metric'] == 'arrived_vehicles']
     non_arrived_data = df[df['Metric'] == 'non_arrived_vehicles']
-    ax1.plot(arrived_data['Iteration'], arrived_data['Mean'], label='Arrived Vehicles', color='green')
-    ax1.fill_between(arrived_data['Iteration'], 
-                     arrived_data['Mean'] - arrived_data['Std'], 
-                     arrived_data['Mean'] + arrived_data['Std'], 
-                     color='green', alpha=0.1, label='Std Dev')
-    ax1.plot(non_arrived_data['Iteration'], non_arrived_data['Mean'], label='Non-Arrived Vehicles', color='red')
-    ax1.fill_between(non_arrived_data['Iteration'], 
-                     non_arrived_data['Mean'] - non_arrived_data['Std'], 
-                     non_arrived_data['Mean'] + non_arrived_data['Std'], 
-                     color='red', alpha=0.1, label='Std Dev')
+    ax1.plot(arrived_data['Iteration'], arrived_data['Value'], label='Arrived Vehicles', color='green')
+
+    ax1.plot(non_arrived_data['Iteration'], non_arrived_data['Value'], label='Non-Arrived Vehicles', color='red')
+
     ax1.set_xlabel('Iteration')
     ax1.set_ylabel('Number of Cars')
     ax1.set_title('Arrived and Non-Arrived Vehicles Over Iterations')
@@ -73,16 +64,10 @@ def plot_metrics_from_csv(file_path, save_path):
     # Second subplot: Total Trip Time and Total Wait Time
     trip_time_data = df[df['Metric'] == 'total_trip_time']
     wait_time_data = df[df['Metric'] == 'total_wait_time']
-    ax2.plot(trip_time_data['Iteration'], trip_time_data['Mean'], label='Total Trip Time', color='purple')
-    ax2.fill_between(trip_time_data['Iteration'], 
-                     trip_time_data['Mean'] - trip_time_data['Std'], 
-                     trip_time_data['Mean'] + trip_time_data['Std'], 
-                     color='purple', alpha=0.1, label='Std Dev')
-    ax2.plot(wait_time_data['Iteration'], wait_time_data['Mean'], label='Total Wait Time', color='orange')
-    ax2.fill_between(wait_time_data['Iteration'], 
-                     wait_time_data['Mean'] - wait_time_data['Std'], 
-                     wait_time_data['Mean'] + wait_time_data['Std'], 
-                     color='orange', alpha=0.1, label='Std Dev')
+    ax2.plot(trip_time_data['Iteration'], trip_time_data['Value'], label='Total Trip Time', color='purple')
+  
+    ax2.plot(wait_time_data['Iteration'], wait_time_data['Value'], label='Total Wait Time', color='orange')
+ 
     ax2.set_xlabel('Iteration')
     ax2.set_ylabel('Seconds')
     ax2.set_title('Total Trip Time and Total Wait Time Over Iterations')
@@ -97,6 +82,126 @@ def plot_metrics_from_csv(file_path, save_path):
     plt.close()
 
 def plot_metrics_from_multiple_csvs(base_path, save_path, num_files):
+    """
+    Iterates over multiple CSV files and plots metrics for all runs on the same graph.
+
+    Args:
+        base_path (str): Base path to the CSV files (e.g., 'output/logging_run').
+        save_path (str): Path to save the combined graphs.
+        num_files (int): Number of CSV files to iterate over.
+    """
+    # Ensure the save folder exists
+    os.makedirs(save_path, exist_ok=True)
+
+    # Plot 1: Fitness
+    plt.figure(figsize=(10, 6))
+    for i in range(1, num_files + 1):
+        file_path = f"{base_path}{i}.csv"
+        print(f"Processing: {file_path}")
+
+        # Load the CSV file
+        df = pd.read_csv(file_path, delimiter='\t')
+
+        # Filter fitness data
+        fitness_data = df[df['Metric'] == 'global_fitness']
+        fitness_data = fitness_data[0:20]
+        plt.plot(fitness_data['Iteration'], fitness_data['Value'], label=f'Run {i}')
+
+    plt.xlabel('Iteration')
+    plt.ylabel('Fitness')
+    plt.title('Fitness Over Iterations (All Runs)')
+    plt.xlim(0, 19)
+    plt.gca().xaxis.set_major_locator(MultipleLocator(x_step))
+    plt.legend()
+    fitness_save_path = os.path.join(save_path, "fitness_all_runs.png")
+    plt.savefig(fitness_save_path)
+    plt.close()
+    
+    # Plot 2: Arrived and Non-Arrived Vehicles
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(20, 20))  #10, 10
+
+    for i in range(1, num_files + 1):
+        file_path = f"{base_path}{i}.csv"
+        print(f"Processing: {file_path}")
+
+        # Load the CSV file
+        df = pd.read_csv(file_path, delimiter='\t')
+
+        # First subplot: Arrived and Non-Arrived Vehicles
+        arrived_data = df[df['Metric'] == 'arrived_vehicles']
+        non_arrived_data = df[df['Metric'] == 'non_arrived_vehicles']
+        arrived_data = arrived_data[0:20]
+        non_arrived_data = non_arrived_data[0:20]
+        
+        ax1.plot(arrived_data['Iteration'], arrived_data['Value'], label=f'Arrived Vehicles (Run {i})')
+
+        ax2.plot(non_arrived_data['Iteration'], non_arrived_data['Value'], label=f'Non-Arrived Vehicles (Run {i})')
+
+    # Finalize first subplot
+    ax1.set_xlabel('Iteration')
+    ax1.set_ylabel('Number of Vehicles')
+    ax1.set_title('Arrived Vehicles Over Iterations (All Runs)')
+    ax1.set_xlim(0, 19)
+    ax1.xaxis.set_major_locator(MultipleLocator(x_step))
+    ax1.legend()
+
+    # Finalize second subplot
+    ax2.set_xlabel('Iteration')
+    ax2.set_ylabel('Number of Vehicles')
+    ax2.set_title('Non-Arrived Vehicles over Iterations (All Runs)')
+    ax2.set_xlim(0, 19)
+    ax2.xaxis.set_major_locator(MultipleLocator(x_step))
+    ax2.legend()
+
+    # Save the combined plot
+    combined_save_path = os.path.join(save_path, "Arrived_nonArrived_vehicles.png")
+    plt.tight_layout()
+    plt.savefig(combined_save_path)
+    plt.close()
+
+    # Plot 3: Total Trip and Total Wait Time
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(20, 20))  # 10,10
+
+    for i in range(1, num_files + 1):
+        file_path = f"{base_path}{i}.csv"
+        print(f"Processing: {file_path}")
+
+        # Load the CSV file
+        df = pd.read_csv(file_path, delimiter='\t')
+
+        trip_time_data = df[df['Metric'] == 'total_trip_time']
+        wait_time_data = df[df['Metric'] == 'total_wait_time']
+        trip_time_data = trip_time_data[0:20]
+        wait_time_data = wait_time_data[0:20]
+
+        # First subplot: Total Trip Time
+        ax1.plot(trip_time_data['Iteration'], trip_time_data['Value'], label=f'Total Trip Time (Run {i})')
+        
+        # Second subplot: Total Wait Time
+        ax2.plot(wait_time_data['Iteration'], wait_time_data['Value'], label=f'Total Wait Time (Run {i})')
+
+    # Finalize first subplot
+    ax1.set_xlabel('Iteration')
+    ax1.set_ylabel('Seconds')
+    ax1.set_title('Total Trip Time Over Iterations (All Runs)')
+    ax1.set_xlim(0, 19)
+    ax1.xaxis.set_major_locator(MultipleLocator(x_step))
+    ax1.legend()
+
+    # Finalize second subplot
+    ax2.set_xlabel('Iteration')
+    ax2.set_ylabel('Seconds')
+    ax2.set_title('Total Wait Time Over Iterations (All Runs)')
+    ax2.set_xlim(0, 19)
+    ax2.xaxis.set_major_locator(MultipleLocator(x_step))
+    ax2.legend()
+
+    combined_save_path = os.path.join(save_path, "trip_wait_time.png")
+    plt.tight_layout()
+    plt.savefig(combined_save_path)
+    plt.close()
+
+def plot_mean_metrics_from_multiple_csvs(base_path, save_path, num_files):
     """
     Iterates over multiple CSV files and plots metrics for all runs on the same graph.
 
@@ -387,10 +492,16 @@ def calculate_mean_std(base_path, num_files=5):
 
         for metric in metrics:
             metric_data = df[df['Metric'] == metric]
-            # Extract last iteration data
+            
+            # Extract last iteration data - Validation data
             last_iteration_data = metric_data[metric_data['Iteration'] == metric_data['Iteration'].max()]
+            results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
+            
+            # Extract secound last - Last training data
+            #second_last_iteration = metric_data['Iteration'].iloc[-1]  # Get the second last iteration
+            #second_last_iteration_data = metric_data[metric_data['Iteration'] == second_last_iteration]
             # Extract mean value
-            results[metric][i - 1] = last_iteration_data['Mean'].tolist()[0]
+            #results[metric][i - 1] = second_last_iteration_data['Value'].tolist()[0]
 
     # Calculate and print mean and std for each metric
     for metric in metrics:
@@ -448,6 +559,7 @@ def plot_boxplots_for_metrics(file_path):
 def plot_hist_for_metrics_across_runs(base_paths, num_files, save_path="output"):
     metrics = ['arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
     xlabel_txt = ['V', 'Simpel', 'Complex', 'Complex_with_P']
+    xlabel_txt = ['Simple', 'Full']
     overall_mean = {metric: [] for metric in metrics}
     overall_std = {metric: [] for metric in metrics}
 
@@ -464,8 +576,13 @@ def plot_hist_for_metrics_across_runs(base_paths, num_files, save_path="output")
                 metric_data = df[df['Metric'] == metric]
                 # Extract last 5 iteration data
                 last_iteration_data = metric_data[metric_data['Iteration'] == metric_data['Iteration'].max()]
-                # Calculate mean and std for the last 5 values
                 results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
+                
+
+                #second_last_iteration = metric_data['Iteration'].iloc[-2]  # Get the second last iteration
+                #second_last_iteration_data = metric_data[metric_data['Iteration'] == second_last_iteration]
+                #results[metric][i - 1] = second_last_iteration_data['Value'].tolist()[0]
+                
 
         # Calculate overall mean and std for the last 5 values across all files for this base_path
         for metric in metrics:
@@ -546,23 +663,93 @@ def plot_hist_for_metrics_across_particles(base_paths, num_files, save_path="out
     plt.savefig(save_path)
     plt.close()
 
+def extract_validation_metrics(base_paths, save_path, num_files=5):
+    '''
+    Extract validation metrics from 5 indenpendent runs each with 5 validation runs for the same cost function
+    '''
+    metrics = ['fitness', 'arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
+    global_results = {metric: [] for metric in metrics}
+    global_fitness_lines = []
+
+    # Ensure the save folder exists
+    os.makedirs(save_path, exist_ok=True)
+
+    for i in range(1, num_files + 1):
+        file_path = f"{base_paths}{i}.csv"
+        df = pd.read_csv(file_path, delimiter='\t')
+        
+        for metric in metrics:
+            metric_data = df[df['Metric'] == metric]
+            values = metric_data['Value'].values
+
+            global_results[metric].append(values)
+    
+        # Extract global_fitness for horizontal lines
+        global_fitness_lines_df = (df[df['Metric'] == 'global_fitness'])
+        global_fitness_lines.append(global_fitness_lines_df['Value'].iloc[-1])
+    
+    global_mean = {metric: np.mean(np.concatenate(global_results[metric])) for metric in metrics}
+    global_std = {metric: np.std(np.concatenate(global_results[metric])) for metric in metrics}
+    global_fitness_mean = np.mean(global_fitness_lines)
+        
+    return global_mean, global_std, global_fitness_mean
+
+def plot_hist_for_validation(base_paths, save_path="output", num_cost_function=4):
+    metrics = ['fitness', 'arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
+    xlabel_txt = ['V', 'Simpel', 'Complex', 'Complex_with_P']
+    xlabel_txt = ['Simple', 'Full']
+
+    # Ensure the save folder exists
+    os.makedirs(save_path, exist_ok=True)
+
+    fig, axes = plt.subplots(1, len(metrics), figsize=(40, 25))
+    x_positions = np.arange(num_cost_function)  # Positions for the bars
+
+    for i in range(num_cost_function):
+        mean, std, global_fitness_value = extract_validation_metrics(base_paths[i], save_path, num_files=5)
+        
+        for idx, metric in enumerate(metrics):
+            ax = axes[idx]
+            # Plot only at the correct x-position for this cost function
+            ax.bar([i], [mean[metric]], yerr=[std[metric]], 
+                   color=['skyblue', 'orange', 'green', 'red'][i % 4], capsize=5, alpha=0.7)
+
+            ax.set_xticks(x_positions)
+            ax.set_xticklabels(xlabel_txt[:num_cost_function], fontsize=20)
+            ax.set_title(f'{metric.capitalize()}', fontsize=24)
+            ax.set_ylabel('Mean Value', fontsize=20)
+
+            # Horizontal line for global fitness
+            if idx == 0:
+                ax.hlines(y=global_fitness_value, xmin=i - 0.4, xmax=i + 0.4, colors='black', linestyles='dashed')
+
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_path, "validation_across_cost.png"))
+    plt.close()
+    plt.show()
+
+
 grid_V = "output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run"
 grid_simple = "output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run"
 grid_complex = "output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run"
 grid_full = "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"
 #plot_metrics_from_multiple_csvs(grid_V, "output/grid_5_tls_2_lanes_400_veh_VFitness", 5)
-#plot_metrics_from_multiple_csvs(grid_simple, "output/grid_5_tls_2_lanes_400_veh_simpleFitness",5)
+#plot_metrics_from_multiple_csvs(grid_simple, "output/grid_5_tls_2_lanes_400_veh_simpleFitness", 5)
 #plot_metrics_from_multiple_csvs(grid_complex, "output/grid_5_tls_2_lanes_400_veh_complexFitness", 5)
-plot_metrics_from_multiple_csvs(grid_full, "output/grid_5_tls_2_lanes_400_veh_fullFitness", 5)
-#plot_metrics_from_multiple_csvs("output/logging_run", "output", 5)
+#plot_metrics_from_multiple_csvs(grid_full, "output/grid_5_tls_2_lanes_400_veh_fullFitness", 5)
+plot_metrics_from_multiple_csvs("output/logging_run", "output", 1)
 
-plot_metrics_from_csv("output/grid_5_tls_2_lanes_400_veh_VFitness", "output/grid_5_tls_2_lanes_400_veh_VFitness")
+#plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run" , "output/grid_5_tls_2_lanes_400_veh_complexFitness", 1)
 
 # calculate_mean_std("output/cross_1_tls_2_lanes_400_veh/logging_run", 5)
 # calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run", 5)
 # calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", 5)
-# calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", 5)
-# calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run", 5)
+
+#print("----------------------Validation statistics----------------------")
+#calculate_mean_std("output/grid_40_iterations/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", 5)
+#calculate_mean_std("output/grid_40_iterations/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run", 5)
+#print("\n\n")
+#calculate_mean_std("output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", 5)
 
 # hist_base_path = ["output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run", 
 #                   "output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run",
@@ -570,6 +757,17 @@ plot_metrics_from_csv("output/grid_5_tls_2_lanes_400_veh_VFitness", "output/grid
 #                   "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"]
 
 
-hist_base_path = [grid_V, grid_simple, grid_complex, grid_full]
-plot_hist_for_metrics_across_particles(grid_full, 5, "output")
-plot_hist_for_metrics_across_runs(hist_base_path, 5, "output")
+hist_base_path = ["output/grid_40_iterations/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run",
+                  grid_simple,
+                  grid_full,
+                  "output/grid_40_iterations/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"]
+
+hist_base_path = ["output/validation_runs_simpleFitness/validation_run",
+                  "output/validation_runs_fullFitness/validation_run"]
+
+#plot_hist_for_metrics_across_particles("output/validation_full_run3/validation_run", 5, "output")
+#plot_hist_for_metrics_across_runs(hist_base_path, 5, "output")
+
+#extract_validation_metrics("output/validation_run", "output")
+
+#plot_hist_for_validation(hist_base_path, "output", 2)

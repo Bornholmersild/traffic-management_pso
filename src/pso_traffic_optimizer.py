@@ -2,7 +2,7 @@ import numpy as np
 import os
 import csv
 from sumo_simulation import TrafficSimulation
-
+import traci
 
 class PSO_TrafficOptimizer:
     """Optimizes SUMO traffic light timings using Particle Swarm Optimization (PSO)."""
@@ -27,6 +27,7 @@ class PSO_TrafficOptimizer:
 
         self.num_lights, self.num_phases = self.simulation.extract_tls()
         self.particles, self.velocities = self.initialize_particles()
+        self.r1, self.r2, self.un_idx = self.uniform_seed_distribution()
         self.personal_best = np.full((self.num_particles, self.num_phases), np.inf)
         self.personal_best_fitness = np.full(self.num_particles, np.inf)
         min_particle_idx = np.argmin(np.min(self.particles, axis=1))
@@ -52,7 +53,10 @@ class PSO_TrafficOptimizer:
         log_file = f"{base_path_to_save}/logging_run{independent_run+1}.csv"
 
         if os.path.exists(log_file):
-            os.remove(log_file)
+            #os.remove(log_file)
+            raise FileExistsError(f"The file '{log_file}' already exists.")
+
+        self.simulation.start_sumo()
 
         with open(log_file, 'w', newline='') as f:
             writer = csv.writer(f, delimiter='\t')
@@ -61,25 +65,27 @@ class PSO_TrafficOptimizer:
             for iteration in range(self.iterations_max):
                 iteration_metrics = {'fitness': [], 'global_fitness': [], 'arrived_vehicles': [], 'non_arrived_vehicles': [], 'total_trip_time': [], 'total_wait_time': []}
                 self.log_save_particle_phases(iteration, self.iterations_max, independent_run, f"{base_path_to_save}/particle_log.csv")  # Save the particle phases at key iterations
+                
 
                 for particle_idx in range(self.num_particles):     
-                    self.simulation.start_sumo()
                     self.simulation.apply_particle_to_sumo(self.particles[particle_idx])
                     self.simulation.run_simulation()
-                    fitness = self.evaluate(self.particles[particle_idx]) 
-                    self.simulation.close_sumo()                    
+                    fitness = self.evaluate(self.particles[particle_idx])                   
                     self.update_best_particle(fitness, particle_idx)                          
                     self.update_particles(particle_idx, iteration)
                     self.log_to_terminal(independent_run, iteration, particle_idx, fitness)
                     self.collect_matrics(iteration_metrics, fitness)
                     self.reset_parameters()
+                    self.simulation.reset_sumo()
                 
                 self.update_global_particle()
                 self.log_to_csv(iteration, iteration_metrics, writer)
                 if iteration == self.iterations_max - 1:        # Save the final global best particle - Which is not trained on
                     self.log_save_particle_phases(iteration + 1, self.iterations_max, independent_run, f"{base_path_to_save}/particle_log.csv")  # Save the particle phases at key iterations
 
-            self.validation(self.global_best, self.iterations_max, writer)  # Validation of the best particle
+            self.simulation.close_sumo()
+            #self.validation(self.global_best, self.iterations_max, writer)  # Validation of the best particle
+
     def evaluate(self, particle):
         """Computes the fitness function based on traffic metrics."""
         P = self.simulation.phase_proportion(particle)
@@ -87,8 +93,8 @@ class PSO_TrafficOptimizer:
 
         #return 1/(V*V)
         #return (self.simulation.total_wait_time) / (V*V)
-        return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V)
-        #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V + P)
+        #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V)
+        return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V + P)
     
     def update_best_particle(self, fitness, particle_idx):
         """Update current particle if fitness cost is lower"""
@@ -100,7 +106,8 @@ class PSO_TrafficOptimizer:
         """ Update particle positions and velocities."""
         i = particle_idx
         w = self.w_max - (self.w_max - self.w_min) * (iteration / self.iterations_max)          
-        r1, r2 = np.random.rand(), np.random.rand()                 # random variable from a uniform distribuion between [0, 1]            
+        r1, r2 = self.r1[self.un_idx], self.r2[self.un_idx]                 # random variable from a uniform distribuion between [0, 1]       
+        self.un_idx += 1     
 
         self.velocities[i] = (w * self.velocities[i] +              # Update velocity 
                                     self.c1 * r1 * (self.personal_best[i] - self.particles[i]) +
@@ -170,7 +177,7 @@ class PSO_TrafficOptimizer:
         print(f"Vehicles Total Wait Time: {self.simulation.total_wait_time}")
         print(f"Particle Current Fitness Cost: {fitness}")
         print(f"Particle Best Fitness Cost: {self.personal_best_fitness[particle_idx]}")
-        #print(f"Particle current phases (reshaped): {self.particles[particle_idx].reshape(self.num_lights, self.num_phases)}")
+        print(f"Global Best particle: {self.global_best_fitness}")
         #print(f"Particle best phases (reshaped): {self.personal_best[particle_idx].reshape(self.num_lights, self.num_phases)}")
 
     def reset_parameters(self):
@@ -180,6 +187,8 @@ class PSO_TrafficOptimizer:
         self.simulation.arrived_vehicles = 0
         self.simulation.non_arrived_vehicles = 0
         self.simulation.veh_stats = {}
+        self.simulation.depart_custom = 0
+        self.simulation.veh_departed = 0
 
     def log_save_particle_phases(self, iteration, max_iterations, independent_run, filename):
         # Define the key iteration milestones
@@ -226,6 +235,52 @@ class PSO_TrafficOptimizer:
         self.simulation.close_sumo()
         self.collect_matrics(iteration_metrics, fitness)
         self.log_to_csv(max_iteration, iteration_metrics, writer)
+
+    
+    def validation_after_testing(self, global_particle, iteration, base_path_to_save, global_fitness):
+        '''
+        Run global best particle on the test simulation.
+        Extract particle from csv files
+        '''
+        os.makedirs(base_path_to_save, exist_ok=True)                   # Ensure the save folder exists
+        log_file = f"{base_path_to_save}/validation_run{iteration+1}.csv"
+
+        if os.path.exists(log_file):
+            #os.remove(log_file)
+            raise FileExistsError(f"The file '{log_file}' already exists.")
+        
+        num_validation_runs = 5
+
+        
+        with open(log_file, 'a', newline='') as f:
+            writer = csv.writer(f, delimiter='\t')
+            writer.writerow(['Iteration', 'Metric', 'Value'])    # Before , std was added        #writer.writerow(["Iteration", "Global Fitness", "Arrived Vehicles", "Non Arrived Vehicles", "Trip Time", "Waiting Time"])
+
+            for validation_run in range(num_validation_runs):
+                iteration_metrics = {'fitness': [], 'global_fitness': [], 'arrived_vehicles': [], 'non_arrived_vehicles': [], 'total_trip_time': [], 'total_wait_time': []}
+                seed = 10 + validation_run
+                self.simulation.set_seed(seed=seed)
+                self.simulation.start_sumo()
+                self.simulation.apply_particle_to_sumo(global_particle)
+                self.global_best_fitness = global_fitness
+                self.simulation.run_simulation()
+                fitness = self.evaluate(global_particle)
+                self.simulation.close_sumo()
+                self.collect_matrics(iteration_metrics, fitness)
+                self.log_to_csv(validation_run+1, iteration_metrics, writer)
+                self.reset_parameters()
+    
+    def uniform_seed_distribution(self):
+        """
+        Initilize random variable for PSO algorithm and iterable variable
+        """
+        rng1 = np.random.default_rng(self.seed)
+        rng2 = np.random.default_rng(self.seed * 10)
+        r1 = rng1.random(size=(self.num_particles * self.iterations_max))
+        r2 = rng2.random(size=(self.num_particles * self.iterations_max))
+        UN_idx = 0
+
+        return r1, r2, UN_idx
 
 
    

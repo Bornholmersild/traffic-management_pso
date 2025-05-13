@@ -4,6 +4,7 @@ import logging
 import xml.etree.ElementTree as ET
 import random
 from sumolib.net import readNet
+import traci.constants as tc
 
 class TrafficSimulation:
     """Handles SUMO traffic simulation and collects relevant data."""
@@ -17,10 +18,12 @@ class TrafficSimulation:
         self.veh_stats = {} 
         self.vehicle_routes = {}
         self.shuffled_veh_ids = []
+        self.file_network = file_network
         self.tree = ET.parse(file_network[1])       # Load the .rou.xml file 
         self.root = self.tree.getroot()
         self.seed = random_seed
         self.sumo_cmd = self._configure_sumo_cmd(file_network, gui_on)
+        self.last_egde_id = ['E0', '-24951719', '499165883#0', '495966519', '-9531177#2', '1042929708#1', '571750901#0', '-8032507#1', '-8028350#4', '-23594040#1', '1262417177', '-1287928531', '62074686', '-23242127']
 
         self.depart_custom = 0
         self.veh_departed = 0
@@ -29,19 +32,25 @@ class TrafficSimulation:
         """Configures SUMO command based on GUI preference."""
         mode = "sumo-gui" if gui_on else "sumo"
         #return [mode, "--time-to-teleport", "-1", "-n", file_network[0], "-r", file_network[1]]        
-        return [mode, "--time-to-teleport", "-1", "-n", file_network[0]]        # Vehicles are added via Traci - Cause shuffling
-            
+        #return [mode, "--time-to-teleport", "-1", "-c", file_network[0]]
+        return [mode,
+        "--time-to-teleport", "-1",
+        "--waiting-time-memory", str(self.sim_iterations),
+        "--no-step-log",
+        "-n", file_network[0]
+        ]
+        
     def run_simulation(self):
         """Runs SUMO simulation and tracks vehicle data."""
         self.vehicle_routes, self.shuffled_veh_ids = self.extract_vehicles()               # Extract vehicles from the .rou.xml file
+        max_veh = 5                                                                        # Number of vehicles to be spawned each simulation time
         for step in range(self.sim_iterations):
-            if len(self.vehicle_routes) > self.veh_departed:                                          # Pass if total amount of vehicles is exceeded
-                self.add_random_vehicles(self.vehicle_routes, self.shuffled_veh_ids, step)
+            if len(self.vehicle_routes)  > self.veh_departed:                                         # Pass if total amount of vehicles is exceeded
+                if len(self.vehicle_routes) < self.veh_departed + max_veh:
+                    max_veh = len(self.vehicle_routes) - self.veh_departed - 1
+                self.add_random_vehicles(self.vehicle_routes, self.shuffled_veh_ids, max_veh=max_veh)
             traci.simulationStep()
             self.update_traffic_data(step)
-        
-        self.depart_custom = 0
-        self.veh_departed = 0
 
     def start_sumo(self):
         try:
@@ -53,10 +62,16 @@ class TrafficSimulation:
         """End simulation"""
         traci.close()
 
+    def reset_sumo(self):
+        #traci.load(["-n", self.file_network[0], "--time-to-teleport", "-1", "--waiting-time-memory", "-1", "--start"])
+        traci.load(["-n", self.file_network[0], "--time-to-teleport", "-1", "--waiting-time-memory", str(self.sim_iterations), "--no-step-log", "--start"])
+
+
     def update_traffic_data(self, step):
         """Updates traffic statistics per step."""
         arrived_vehicles = traci.simulation.getArrivedNumber()
         departed_vehicles = traci.simulation.getDepartedNumber()
+        
         current_time = step + 1
 
         if arrived_vehicles > 0:
@@ -65,10 +80,14 @@ class TrafficSimulation:
             
         if departed_vehicles > 0:
             self.track_departed_vehicles()
-
-        for veh_id in traci.vehicle.getIDList():
-            if traci.vehicle.getWaitingTime(veh_id) > 0:
-                self.veh_stats[veh_id]['wait_time'] += 1 
+        
+        for egdes in self.last_egde_id:
+            vehicles_on_edge = traci.edge.getLastStepVehicleIDs(egdes)
+            if vehicles_on_edge:
+                for veh_id in vehicles_on_edge:
+                    if self.veh_stats[veh_id]['arrive'] == False:
+                        self.veh_stats[veh_id]['wait_time'] = traci.vehicle.getAccumulatedWaitingTime(veh_id)
+                        self.veh_stats[veh_id]['arrive'] = True
         
         if current_time == self.sim_iterations:
             for veh_id in traci.vehicle.getIDList():
@@ -78,6 +97,7 @@ class TrafficSimulation:
         """Calculates total trip time for arrived vehicles."""
         trip_time = 0
         wait_time = 0
+
         for veh_id in traci.simulation.getArrivedIDList():
             trip_time += current_time - self.veh_stats[veh_id]["departure_time"]
             wait_time += self.veh_stats[veh_id]["wait_time"]
@@ -91,8 +111,10 @@ class TrafficSimulation:
         for veh_id in traci.simulation.getDepartedIDList():
             self.veh_stats[veh_id] = {
                 "departure_time": traci.vehicle.getDeparture(veh_id),
-                "wait_time": 0.0
+                "wait_time": 0.0,
+                "arrive" : False
             }
+
 
     def extract_tls(self):
         """Extract total number of traffic lights and phases"""
@@ -162,7 +184,7 @@ class TrafficSimulation:
             current_phase = traci.trafficlight.getPhase(tls)  # Get the current phase index
             traci.trafficlight.setPhaseDuration(tls, clip_phases[current_phase].duration)   
 
-    def add_random_vehicles(self, vehicle_routes, shuffled_veh_ids, sim_step):
+    def add_random_vehicles(self, vehicle_routes, shuffled_veh_ids, max_veh):
         '''
         Add vehicles to the simulation at a specific simulation step.
 
@@ -173,17 +195,19 @@ class TrafficSimulation:
             shuffle          : Boolean to shuffle vehicle IDs
         '''    
         
-        spawn_time = sim_step                           # + random.randint(0, 1)  # Random delay (0-5s)
-        veh_id = shuffled_veh_ids[sim_step]
-        route = vehicle_routes[veh_id]
+        for _ in range(max_veh):
+            
+            veh_id = shuffled_veh_ids[self.veh_departed]
+            route = vehicle_routes[veh_id]
+            
+            traci.vehicle.add(vehID=veh_id, 
+                                routeID="",
+                                depart=self.depart_custom)
+            self.veh_departed += 1
+            # Assign edges to the vehicle
+            traci.vehicle.setRoute(veh_id, route)
         
-        traci.vehicle.add(vehID=veh_id, 
-                            routeID="",
-                            depart=self.depart_custom)
         self.depart_custom += 1
-        self.veh_departed += 1
-        # Assign edges to the vehicle
-        traci.vehicle.setRoute(veh_id, route)
             
     def extract_vehicles(self):
         '''
@@ -202,6 +226,8 @@ class TrafficSimulation:
         rng = np.random.default_rng(self.seed)
         shuffled_veh_ids = list(vehicle_routes.keys())
         rng.shuffle(shuffled_veh_ids)
+
+        #print(f"Shuffled vehicle IDs: \n {shuffled_veh_ids}")
         
         return vehicle_routes, shuffled_veh_ids
     
@@ -216,11 +242,15 @@ class TrafficSimulation:
 
     def generate_random_routes(self, net_file, rou_file, num_vehicles=100):
         net = readNet(net_file)
-        #edges = [e.getID() for e in net.getEdges() if not e.isSpecial()]  
-        depart = ['-E12', '-E17', 'E22', '-E21', 'E19', '-E18', 'E13', 'E11']
-        arrive = ['E12', 'E17', '-E22', 'E21', '-E19', 'E18', '-E13', '-E11']
         
+        # Grid world
+        #depart = ['-E12', '-E17', 'E22', '-E21', 'E19', '-E18', 'E13', 'E11']
+        #arrive = ['E12', 'E17', '-E22', 'E21', '-E19', 'E18', '-E13', '-E11']
         
+        # Odense World
+        depart = ['851348185#0', '24951719', '-499165883#1', '-495966519', '9531177#0', '-1042929708#2', '-571750901#2', '8032507#0', '8028350#3', '23594040#0', '1262417180', '451958405', '-658173492', '23242127']
+        arrive = self.last_egde_id
+
         with open(rou_file, 'w') as f:
             f.write('<?xml version="1.0" encoding="UTF-8"?>\n\n')
             f.write('<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">\n')

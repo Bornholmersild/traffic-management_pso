@@ -52,6 +52,16 @@ cost_paths = ["output/grid_5_tls_2_lanes_400_veh_VFitness/logging_run",
                   "output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", 
                   "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"
 ]
+
+cost_paths = ["output/grid_40_iterations/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run", 
+              "output/grid_5_tls_2_lanes_400_veh_simpleFitness/logging_run",
+              "output/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run",
+              "output/grid_40_iterations/grid_5_tls_2_lanes_400_veh_fullFitness/logging_run"
+]
+
+cost_paths = ["output/validation_simple_run5/validation_run",
+                  "output/validation_full_run3/validation_run"]
+
 num_files = 5
 metrics = ['arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
 
@@ -70,8 +80,11 @@ for base_path in cost_paths:                            # Iterate over cost func
                 metric_data = df[df['Metric'] == metric]
                 # Extract last 5 iteration data
                 last_iteration_data = metric_data[metric_data['Iteration'] == metric_data['Iteration'].max()]
-                # Calculate mean and std for the last 5 values
                 results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
+
+                #second_last_iteration = metric_data['Iteration'].iloc[-2]  # Get the second last iteration
+                #second_last_iteration_data = metric_data[metric_data['Iteration'] == second_last_iteration]
+                #results[metric][i - 1] = second_last_iteration_data['Value'].tolist()[0]
         
         for metric in metrics:
             cost_results[metric].append(results[metric])  # Append this cost function's data

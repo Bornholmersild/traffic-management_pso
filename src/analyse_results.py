@@ -554,7 +554,7 @@ def plot_boxplots_for_metrics(file_path):
 def plot_hist_for_metrics_across_runs(base_paths, num_files, save_path="output"):
     metrics = ['arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
     xlabel_txt = ['V', 'Simpel', 'Complex', 'Complex_with_P']
-    xlabel_txt = ['1/V²', 'SW/V²', 'Full']
+    xlabel_txt = ['1/V²', 'SW/V²', 'Complex']
     overall_mean = {metric: [] for metric in metrics}
     overall_std = {metric: [] for metric in metrics}
 
@@ -567,22 +567,31 @@ def plot_hist_for_metrics_across_runs(base_paths, num_files, save_path="output")
             # Load the CSV file
             df = pd.read_csv(file_path, delimiter='\t')
 
+            lowest_fitness_iteration = df[df['Metric'] == 'fitness']['Iteration'][df[df['Metric'] == 'fitness']['Value'].idxmin()]
+
             for metric in metrics:
                 metric_data = df[df['Metric'] == metric]
                 # Extract last 5 iteration data
-                last_iteration_data = metric_data[metric_data['Iteration'] == metric_data['Iteration'].max()]
-                results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
+                #last_iteration_data = metric_data[metric_data['Iteration'] == metric_data['Iteration'].max()]
+                #results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
                 
-
-                #second_last_iteration = metric_data['Iteration'].iloc[-2]  # Get the second last iteration
-                #second_last_iteration_data = metric_data[metric_data['Iteration'] == second_last_iteration]
-                #results[metric][i - 1] = second_last_iteration_data['Value'].tolist()[0]
+                iteration_data = metric_data[metric_data['Iteration'] == lowest_fitness_iteration]
+                results[metric][i - 1] = iteration_data['Value'].tolist()[0]
                 
 
         # Calculate overall mean and std for the last 5 values across all files for this base_path
         for metric in metrics:
             overall_mean[metric].append(np.mean(results[metric]))
             overall_std[metric].append(np.std(results[metric]))
+
+    first_group_metrics = metrics[:2]  # First two metrics
+    second_group_metrics = metrics[2:]  # Last two metrics
+
+    first_group_min = min([min(overall_mean[metric]) for metric in first_group_metrics])
+    first_group_max = max([max(overall_mean[metric]) for metric in first_group_metrics])
+
+    second_group_min = min([min(overall_mean[metric]) for metric in second_group_metrics])
+    second_group_max = max([max(overall_mean[metric]) for metric in second_group_metrics])
 
     # Create subplots for each metric
     fig, axes = plt.subplots(1, len(metrics), figsize=(40, 25))
@@ -596,8 +605,14 @@ def plot_hist_for_metrics_across_runs(base_paths, num_files, save_path="output")
         ax.set_title(f'{metric.capitalize()}', fontsize=24)
         ax.set_ylabel('Mean Value', fontsize=20)
 
+        #         # Set y-axis limits based on the group
+        if metric in first_group_metrics:
+            ax.set_ylim(0, first_group_max+200)
+        elif metric in second_group_metrics:
+            ax.set_ylim(0, second_group_max+20000)
+
     plt.tight_layout()
-    save_path = os.path.join(save_path, "validation_across_cost.png")
+    save_path = os.path.join(save_path, "globalbest_metric_across_cost.png")
     plt.savefig(save_path)
     plt.close()
     plt.show()
@@ -615,20 +630,35 @@ def plot_hist_for_metrics_across_particles(base_paths, num_files, save_path="out
         file_path = f"{base_paths}{i}.csv"
         # Load the CSV file
         df = pd.read_csv(file_path, delimiter='\t')
+
+        # Find the iteration where 'fitness' has the lowest value
+        lowest_fitness_iteration = df[df['Metric'] == 'fitness']['Iteration'][df[df['Metric'] == 'fitness']['Value'].idxmin()]
         
         for metric in metrics:
             metric_data = df[df['Metric'] == metric]
             # Extract last 5 iteration data
             
-            last_iteration_data = metric_data[metric_data['Iteration'] == df['Iteration'].max()]
-            # Calculate mean and std for the last 5 values
-            global_results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
+            #last_iteration_data = metric_data[metric_data['Iteration'] == df['Iteration'].max()]
+            #global_results[metric][i - 1] = last_iteration_data['Value'].tolist()[0]
+            # Find the iteration where 'fitness' has the lowest value
+            iteration_data = metric_data[metric_data['Iteration'] == lowest_fitness_iteration]
+            global_results[metric][i - 1] = iteration_data['Value'].tolist()[0]
     
         # Extract global_fitness for horizontal lines
         global_fitness_data = df[df['Metric'] == 'global_fitness']
         
         global_fitness_lines[i - 1] = global_fitness_data['Value'].iloc[-1]
         print(global_fitness_lines[i-1])
+
+    first_group_metrics = metrics[1:3]  # First two metrics
+    second_group_metrics = metrics[3:5]  # Last two metrics
+
+    first_group_min = min([min(global_results[metric]) for metric in first_group_metrics])
+    first_group_max = max([max(global_results[metric]) for metric in first_group_metrics])
+
+    second_group_min = min([min(global_results[metric]) for metric in second_group_metrics])
+    second_group_max = max([max(global_results[metric]) for metric in second_group_metrics])
+
     # Create subplots for each metric
     fig, axes = plt.subplots(1, len(metrics), figsize=(40, 25))
     x_positions = np.arange(num_files)  # Positions for the bars
@@ -641,6 +671,12 @@ def plot_hist_for_metrics_across_particles(base_paths, num_files, save_path="out
         ax.set_xticklabels([f'Run {i}' for i in range(1, num_files + 1)], fontsize=20)
         ax.set_title(f'{metric.capitalize()} Across Runs', fontsize=24)
         ax.set_ylabel('Mean Value', fontsize=20)
+
+                        # Set y-axis limits based on the group
+        if metric in first_group_metrics:
+            ax.set_ylim(0, first_group_max) # first_group_min
+        elif metric in second_group_metrics:
+            ax.set_ylim(0, second_group_max) # second_group_min
 
         if idx == 0:
             for j in range(num_files):
@@ -658,7 +694,60 @@ def plot_hist_for_metrics_across_particles(base_paths, num_files, save_path="out
     plt.savefig(save_path)
     plt.close()
 
-def extract_validation_metrics(base_paths, save_path, num_files=5):
+def plot_hist_for_identical_run(base_paths, select_run, save_path="output"):
+    metrics = ['arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
+    xlabel_txt = ['1/V²', 'SW/V²', 'Complex']
+    results = {metric: [] for metric in metrics}
+    
+
+    for base_path in base_paths:
+        print(f"---------{base_path}---------")
+
+        file_path = f"{base_path}{select_run}.csv"
+        
+        # Load the CSV file
+        df = pd.read_csv(file_path, delimiter='\t')
+
+        lowest_fitness_iteration = df[df['Metric'] == 'fitness']['Iteration'][df[df['Metric'] == 'fitness']['Value'].idxmin()]
+
+        for metric in metrics:
+            metric_data = df[df['Metric'] == metric]
+            iteration_data = metric_data[metric_data['Iteration'] == lowest_fitness_iteration]
+            results[metric].append(iteration_data['Value'].tolist()[0])
+
+    first_group_metrics = metrics[:2]  # First two metrics
+    second_group_metrics = metrics[2:]  # Last two metrics
+
+    first_group_max = max([max(results[metric]) for metric in first_group_metrics])
+    second_group_max = max([max(results[metric]) for metric in second_group_metrics])
+
+    # Create subplots for each metric
+    fig, axes = plt.subplots(1, len(metrics), figsize=(40, 25))
+    x_positions = np.arange(len(base_paths))  # Positions for the bars
+
+    for idx, metric in enumerate(metrics):
+        ax = axes[idx]
+        ax.bar(x_positions, results[metric], color=['skyblue', 'orange', 'green'], capsize=5, alpha=0.7)
+        ax.set_xticks(x_positions)
+        ax.set_xticklabels([f'{xlabel_txt[i]}' for i in range(len(base_paths))], fontsize=20)
+        ax.set_title(f'{metric.capitalize()}', fontsize=24)
+        ax.set_ylabel('Mean Value', fontsize=20)
+
+        #         # Set y-axis limits based on the group
+        if metric in first_group_metrics:
+            ax.set_ylim(0, first_group_max+200)
+        elif metric in second_group_metrics:
+            ax.set_ylim(0, second_group_max+20000)
+
+    fig.suptitle(f"Metrics Across indenpendent run {select_run}", fontsize=30, y=1.02)
+    plt.tight_layout()
+    save_path = os.path.join(save_path, f"Metrics_for_indenpendent_run{select_run}_across_cost_.png")
+    plt.savefig(save_path, bbox_inches='tight')
+    #plt.show()
+    plt.close()
+    
+
+def extract_validation_metrics(base_paths, save_path, select_run):
     '''
     Extract validation metrics from 5 indenpendent runs each with 5 validation runs for the same cost function
     '''
@@ -669,7 +758,7 @@ def extract_validation_metrics(base_paths, save_path, num_files=5):
     # Ensure the save folder exists
     os.makedirs(save_path, exist_ok=True)
 
-    for i in range(1, num_files + 1):
+    for i in range(select_run, select_run + 1):  
         file_path = f"{base_paths}{i}.csv"
         df = pd.read_csv(file_path, delimiter='\t')
         
@@ -689,10 +778,10 @@ def extract_validation_metrics(base_paths, save_path, num_files=5):
         
     return global_mean, global_std, global_fitness_mean
 
-def plot_hist_for_validation(base_paths, save_path="output", num_cost_function=4):
-    metrics = ['fitness', 'arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
+def plot_hist_for_validation(base_paths, select_run, save_path="output", num_cost_function=4):
+    metrics = ['arrived_vehicles', 'non_arrived_vehicles', 'total_trip_time', 'total_wait_time']
     xlabel_txt = ['V', 'Simpel', 'Complex', 'Complex_with_P']
-    xlabel_txt = ['Simple', 'Full']
+    xlabel_txt = ['1/V²', 'SW/V²', 'Complex']
 
     # Ensure the save folder exists
     os.makedirs(save_path, exist_ok=True)
@@ -701,7 +790,7 @@ def plot_hist_for_validation(base_paths, save_path="output", num_cost_function=4
     x_positions = np.arange(num_cost_function)  # Positions for the bars
 
     for i in range(num_cost_function):
-        mean, std, global_fitness_value = extract_validation_metrics(base_paths[i], save_path, num_files=5)
+        mean, std, global_fitness_value = extract_validation_metrics(base_paths[i], save_path, select_run)
         
         for idx, metric in enumerate(metrics):
             ax = axes[idx]
@@ -714,14 +803,10 @@ def plot_hist_for_validation(base_paths, save_path="output", num_cost_function=4
             ax.set_title(f'{metric.capitalize()}', fontsize=24)
             ax.set_ylabel('Mean Value', fontsize=20)
 
-            # Horizontal line for global fitness
-            if idx == 0:
-                ax.hlines(y=global_fitness_value, xmin=i - 0.4, xmax=i + 0.4, colors='black', linestyles='dashed')
-
     plt.tight_layout()
-    plt.savefig(os.path.join(save_path, "validation_across_cost.png"))
-    plt.close()
+    #plt.savefig(os.path.join(save_path, "validation_across_cost.png"))
     plt.show()
+    plt.close()
 
 
 grid_V = "output/odense_VFitness/logging_run"
@@ -732,13 +817,13 @@ grid_full = "output/odense_fullFitness/logging_run"
 #plot_metrics_from_multiple_csvs(grid_simple, "output/grid_5_tls_2_lanes_400_veh_simpleFitness", 5)
 #plot_metrics_from_multiple_csvs(grid_complex, "output/grid_5_tls_2_lanes_400_veh_complexFitness", 5)
 #plot_metrics_from_multiple_csvs(grid_full, "output/grid_5_tls_2_lanes_400_veh_fullFitness", 5)
-plot_metrics_from_multiple_csvs(grid_simple, "output/odense_simpleFitness", 1)
-plot_metrics_from_csv("output/odense_simpleFitness/logging_run1.csv", "output/odense_simpleFitness")
+#plot_metrics_from_multiple_csvs(grid_simple, "output/odense_simpleFitness", 5)
+#plot_metrics_from_csv("output/odense_simpleFitness/logging_run1.csv", "output/odense_simpleFitness")
 #plot_metrics_from_multiple_csvs("output/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run" , "output/grid_5_tls_2_lanes_400_veh_complexFitness", 1)
 
-calculate_mean_std(grid_V, 1)
-calculate_mean_std(grid_simple, 1)
-calculate_mean_std(grid_full, 1)
+#calculate_mean_std(grid_V, 1)
+#calculate_mean_std(grid_simple, 1)
+#calculate_mean_std(grid_full, 1)
 
 #print("----------------------Validation statistics----------------------")
 #calculate_mean_std("output/grid_40_iterations/grid_5_tls_2_lanes_400_veh_complexFitness/logging_run", 5)
@@ -754,14 +839,18 @@ calculate_mean_std(grid_full, 1)
 
 hist_base_path = [grid_V,
                   grid_simple,
+                  grid_complex,
                   grid_full]
 
-hist_base_path_validation = ["output/validation_runs_simpleFitness/validation_run",
-                             "output/validation_runs_fullFitness/validation_run"]
+hist_base_path = [grid_V,
+                  grid_simple,
+                  grid_complex]
 
-#plot_hist_for_metrics_across_particles("output/validation_full_run3/validation_run", 5, "output")
-plot_hist_for_metrics_across_runs(hist_base_path, 1, "output")
+hist_base_path_validation = ["output/odense_VFitness_validation/validation_run",
+                             "output/odense_simpleFitness_validation/validation_run"]
 
-#extract_validation_metrics("output/validation_run", "output")
-
-#plot_hist_for_validation(hist_base_path, "output", 2)
+#plot_hist_for_metrics_across_particles(grid_V, 5, "output")
+plot_hist_for_metrics_across_runs(hist_base_path, 5, "output")
+#plot_hist_for_validation(hist_base_path, select_run=1, save_path="output", num_cost_function=3)
+# for i in range(1, 6):
+#     plot_hist_for_identical_run(hist_base_path, select_run=i, save_path="output")

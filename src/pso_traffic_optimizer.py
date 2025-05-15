@@ -91,8 +91,8 @@ class PSO_TrafficOptimizer:
         V = max(self.simulation.arrived_vehicles, 0.00001)  # Avoid division by zero
 
         #return 1/(V*V)
-        return (self.simulation.total_wait_time) / (V*V)
-        #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V)
+        #return (self.simulation.total_wait_time) / (V*V)
+        return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V)
         #return (self.simulation.total_trip_time + self.simulation.total_wait_time + (self.simulation.non_arrived_vehicles * self.simulation.sim_iterations)) / (V*V + P)
     
     def update_best_particle(self, fitness, particle_idx):
@@ -224,16 +224,17 @@ class PSO_TrafficOptimizer:
                 writer.writerow([])  # Blank line between particles
 
     
-    def validation(self, global_particle, max_iteration, writer):
-        iteration_metrics = {'fitness': [], 'global_fitness': [], 'arrived_vehicles': [], 'non_arrived_vehicles': [], 'total_trip_time': [], 'total_wait_time': []}
+    def validation(self, global_particle, seed):     # max_iteration, writer,
         self.simulation.start_sumo()
+        iteration_metrics = {'fitness': [], 'global_fitness': [], 'arrived_vehicles': [], 'non_arrived_vehicles': [], 'total_trip_time': [], 'total_wait_time': []}
         self.simulation.apply_particle_to_sumo(global_particle)
-        self.simulation.set_seed(seed=10)
+        self.simulation.set_seed(seed=seed)
         self.simulation.run_simulation()
-        fitness = self.evaluate(global_particle)
-        self.simulation.close_sumo()
+        fitness = self.evaluate(global_particle)            # REMEMEBER TO SET COST
         self.collect_matrics(iteration_metrics, fitness)
-        self.log_to_csv(max_iteration, iteration_metrics, writer)
+        self.log_to_terminal(0, 0, 0, fitness)
+        self.simulation.close_sumo()
+        #self.log_to_csv(max_iteration, iteration_metrics, writer)
 
     
     def validation_after_testing(self, global_particle, iteration, base_path_to_save, global_fitness):
@@ -263,7 +264,7 @@ class PSO_TrafficOptimizer:
                 self.simulation.apply_particle_to_sumo(global_particle)
                 self.global_best_fitness = global_fitness
                 self.simulation.run_simulation()
-                fitness = self.evaluate(global_particle)
+                fitness = self.evaluate(global_particle)        # REMEMBER TO SET COST
                 self.simulation.close_sumo()
                 self.collect_matrics(iteration_metrics, fitness)
                 self.log_to_csv(validation_run+1, iteration_metrics, writer)

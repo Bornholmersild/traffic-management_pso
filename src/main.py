@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # The seeds are used to generate the random number generator and 
     # need to be chanced if not all indenpendent runs are executed at once!!!
     
-    select_st_seed = 1              # Select which seed to start with
+    select_st_seed = 4              # Select which seed to start with
     num_independent_runs = 1        # Select number of independent runs to execute  
     #-------------------------------------------------------------------------------------#
     

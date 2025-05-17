@@ -72,7 +72,7 @@ file_network = ["sumo/world_odense.net.xml", "sumo/vehicles_odense.rou.xml"]
 pso = PSO_TrafficOptimizer(
                             file_network,
                             random_seed=1,
-                            sim_iterations=1500,     # 500
+                            sim_iterations=500,     # 500
                             num_particles=10,        # 10
                             iterations_max=200,       # 40
                             w_max=0.5,
@@ -82,33 +82,50 @@ pso = PSO_TrafficOptimizer(
                             phase_min=10,
                             phase_max=40,
                             lamda_factor=0.5,
-                            gui_on=False
+                            gui_on=True
                             )
 
 
 # Validation for mutiple runs
 # Example usage
-file_path_to_particle_log = "output/odense_simpleFitness/particle_log.csv"
-file_path_to_logging_run = "output/odense_simpleFitness/logging_run"
+# file_path_to_particle_log = "output/odense_simpleFitness/particle_log.csv"
+# file_path_to_logging_run = "output/odense_simpleFitness/logging_run"
 
-# Extract phase for global particle at 200 iteration. Stored in a array (1, 5)
-# Extract global fitness for 5 independent runs. Stored in a array (1, 5)
-data = extract_global_particle(file_path_to_particle_log)
-global_fitness = extract_global_fitness(file_path_to_logging_run)
+# # Extract phase for global particle at 200 iteration. Stored in a array (1, 5)
+# # Extract global fitness for 5 independent runs. Stored in a array (1, 5)
+# data = extract_global_particle(file_path_to_particle_log)
+# global_fitness = extract_global_fitness(file_path_to_logging_run)
 
-# Execute 5 validation runs for each independent run. Total of 25 validation runs
-for indenpendent_run in range(5):
-    # Extract global particle for each independent run
-    global_particle = data[indenpendent_run][1]
+# # Execute 5 validation runs for each independent run. Total of 25 validation runs
+# for indenpendent_run in range(5):
+#     # Extract global particle for each independent run
+#     global_particle = data[indenpendent_run][1]
 
-    # Extract global fitness for each independent run
-    global_cost = global_fitness[indenpendent_run]
-    print(f"Indenpendent Run {indenpendent_run+1} \n Global Particle: {global_particle} \n Global Fitness: {global_cost}")
+#     # Extract global fitness for each independent run
+#     global_cost = global_fitness[indenpendent_run]
+#     print(f"Indenpendent Run {indenpendent_run+1} \n Global Particle: {global_particle} \n Global Fitness: {global_cost}")
 
-    # Execute validation run
-    pso.validation_after_testing(global_particle=global_particle,
-                                     iteration=indenpendent_run,
-                                     base_path_to_save="output",
-                                     global_fitness=global_cost
-                                     )
+#     # Execute validation run
+#     pso.validation_after_testing(global_particle=global_particle,
+#                                      iteration=indenpendent_run,
+#                                      base_path_to_save="output",
+#                                      global_fitness=global_cost
+#                                      )
+    
+test_run_particle = [36,29
+      ,16,23
+      ,29,20
+      ,32,21,37,17
+      ,29,13
+      ,16,27
+      ,25,23
+      ,26,36
+      ,23,21,36
+      ,37,19,16,19
+      ,15,23
+      ,28,29
+      ,37,37,26,28
+      ,14,19]
+
+pso.validation(test_run_particle, 4)
                                      

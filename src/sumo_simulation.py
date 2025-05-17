@@ -22,9 +22,10 @@ class TrafficSimulation:
         self.tree = ET.parse(file_network[1])       # Load the .rou.xml file 
         self.root = self.tree.getroot()
         self.seed = random_seed
+        self.rng_veh = np.random.default_rng(self.seed)
         self.sumo_cmd = self._configure_sumo_cmd(file_network, gui_on)
-        self.last_egde_id = ['E0', '-24951719', '499165883#0', '495966519', '-9531177#2', '1042929708#1', '571750901#0', '-8032507#1', '-8028350#4', '-23594040#1', '1262417177', '-1287928531', '62074686', '-23242127']
-
+        #self.last_egde_id = ['E0', '-24951719', '499165883#0', '495966519', '-9531177#2', '1042929708#1', '571750901#0', '-8032507#1', '-8028350#4', '-23594040#1', '1262417177', '-1287928531', '62074686', '-23242127']
+        self.last_egde_id = ['E12', 'E17', '-E22', 'E21', '-E19', 'E18', '-E13', '-E11']
         self.depart_custom = 0
         self.veh_departed = 0
 
@@ -223,9 +224,8 @@ class TrafficSimulation:
             vehicle_routes[veh_id] = route
         
         # Shuffle vehicle IDs
-        rng = np.random.default_rng(self.seed)
         shuffled_veh_ids = list(vehicle_routes.keys())
-        rng.shuffle(shuffled_veh_ids)
+        self.rng_veh.shuffle(shuffled_veh_ids)
 
         #print(f"Shuffled vehicle IDs: \n {shuffled_veh_ids}")
         
@@ -244,11 +244,11 @@ class TrafficSimulation:
         net = readNet(net_file)
         
         # Grid world
-        #depart = ['-E12', '-E17', 'E22', '-E21', 'E19', '-E18', 'E13', 'E11']
+        depart = ['-E12', '-E17', 'E22', '-E21', 'E19', '-E18', 'E13', 'E11']
         #arrive = ['E12', 'E17', '-E22', 'E21', '-E19', 'E18', '-E13', '-E11']
         
         # Odense World
-        depart = ['851348185#0', '24951719', '-499165883#1', '-495966519', '9531177#0', '-1042929708#2', '-571750901#2', '8032507#0', '8028350#3', '23594040#0', '1262417180', '451958405', '-658173492', '23242127']
+        #depart = ['851348185#0', '24951719', '-499165883#1', '-495966519', '9531177#0', '-1042929708#2', '-571750901#2', '8032507#0', '8028350#3', '23594040#0', '1262417180', '451958405', '-658173492', '23242127']
         arrive = self.last_egde_id
 
         with open(rou_file, 'w') as f:

@@ -22,8 +22,7 @@ class PSO_TrafficOptimizer:
         self.phase_min = phase_min
         self.phase_max = phase_max
         self.lamda_factor = lamda_factor
-        self.seed = random_seed
-        self.rng = np.random.default_rng(self.seed)
+        self.rng_pso = np.random.default_rng(100)
 
         self.num_lights, self.num_phases = self.simulation.extract_tls()
         self.particles, self.velocities = self.initialize_particles()
@@ -36,7 +35,7 @@ class PSO_TrafficOptimizer:
 
     def initialize_particles(self):
         """Initializes swarm with random traffic light durations."""
-        particles = self.rng.integers(low=self.phase_min, high=self.phase_max, size=(self.num_particles, self.num_phases))
+        particles = self.rng_pso.integers(low=self.phase_min, high=self.phase_max, size=(self.num_particles, self.num_phases))
         velocities = np.zeros((self.num_particles, self.num_phases))
         return particles, velocities
 
@@ -83,7 +82,6 @@ class PSO_TrafficOptimizer:
                     self.log_save_particle_phases(iteration + 1, self.iterations_max, independent_run, f"{base_path_to_save}/particle_log.csv")  # Save the particle phases at key iterations
 
             self.simulation.close_sumo()
-            #self.validation(self.global_best, self.iterations_max, writer)  # Validation of the best particle
 
     def evaluate(self, particle):
         """Computes the fitness function based on traffic metrics."""
@@ -114,7 +112,7 @@ class PSO_TrafficOptimizer:
 
         temp_particle = self.particles[i] + self.velocities[i]      # Temperal particle position before floor/ceil rounding
 
-        round_prob = self.rng.random(self.num_phases)               # One random probability per phase               
+        round_prob = self.rng_pso.random(self.num_phases)               # One random probability per phase               
         temp_particle = np.where(round_prob <= self.lamda_factor,
                                     np.floor(temp_particle),
                                     np.ceil(temp_particle))
@@ -126,8 +124,9 @@ class PSO_TrafficOptimizer:
         min_fitness_val = self.personal_best_fitness[min_fitness_idx]
 
         if min_fitness_val < self.global_best_fitness:
-            self.global_best = self.particles[min_fitness_idx]
-            self.global_best_fitness = min_fitness_val
+            self.global_best = self.particles[min_fitness_idx].copy()
+            self.global_best_fitness = min_fitness_val.copy()
+
     
     def collect_matrics(self, iteration_metrics, fitness):
         # Append the metrics to the iteration list
@@ -274,9 +273,8 @@ class PSO_TrafficOptimizer:
         """
         Initilize random variable for PSO algorithm and iterable variable
         """
-        rng1 = np.random.default_rng(self.seed)
-        rng2 = np.random.default_rng(self.seed * 10)
-        r1 = rng1.random(size=(self.num_particles * self.iterations_max))
+        rng2 = np.random.default_rng(101)
+        r1 = self.rng_pso.random(size=(self.num_particles * self.iterations_max))
         r2 = rng2.random(size=(self.num_particles * self.iterations_max))
         UN_idx = 0
 

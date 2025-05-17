@@ -7,11 +7,11 @@ if __name__ == "__main__":
     #network = ["sumo/world_cross_1_tls_2_phases.net.xml", "sumo/cross_world_debug_tester.rou.xml"]
     #network = ["sumo/world_cross_1_tls_2_phases_2_lanes.net.xml", "sumo/vehicles_cross_1_tls_2_phases_2_lanes.rou.xml"]
 
-    #network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes.rou.xml"]
+    network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes.rou.xml"]
     #network = ["sumo/world_grid_5_tls_2_lanes.net.xml", "sumo/vehicles_grid_5_tls_2_lanes_heavyload.rou.xml"]
 
     #network = ["sumo/real_world_odense.sumocfg", "sumo/vehicles_odense.rou.xml"]
-    network = ["sumo/world_odense.net.xml", "sumo/vehicles_odense.rou.xml"]
+    #network = ["sumo/world_odense.net.xml", "sumo/vehicles_odense.rou.xml"]
     base_path_to_save = "output"
 
     
@@ -34,9 +34,9 @@ if __name__ == "__main__":
         pso = PSO_TrafficOptimizer(
                                 network,
                                 random_seed=seed,
-                                sim_iterations=1500,     # 1500
+                                sim_iterations=500,     # 1500
                                 num_particles=10,        # 10
-                                iterations_max=100,       # 100
+                                iterations_max=1,       # 100
                                 w_max=0.5,
                                 w_min=0.1,
                                 c1=2,

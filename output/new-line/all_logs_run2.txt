@@ -1,0 +1,4003 @@
+Run nr: 1 and seed value: 2
+ Retrying in 1 seconds
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 1
+Vehicles Arrived: 115
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 10382.0
+Vehicles Total Wait Time: 4165.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 2
+Vehicles Arrived: 66
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11464.0
+Vehicles Total Wait Time: 5273.0
+Particle Current Fitness Cost: 0.015151515151515152
+Particle Best Fitness Cost: 0.015151515151515152
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 3
+Vehicles Arrived: 80
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10931.0
+Vehicles Total Wait Time: 3205.0
+Particle Current Fitness Cost: 0.0125
+Particle Best Fitness Cost: 0.0125
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 4
+Vehicles Arrived: 152
+Vehicles not Arrived: 14
+Vehicles Total Trip Time: 5738.0
+Vehicles Total Wait Time: 173.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 5
+Vehicles Arrived: 91
+Vehicles not Arrived: 38
+Vehicles Total Trip Time: 10439.0
+Vehicles Total Wait Time: 4942.0
+Particle Current Fitness Cost: 0.01098901098901099
+Particle Best Fitness Cost: 0.01098901098901099
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 6
+Vehicles Arrived: 143
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 7497.0
+Vehicles Total Wait Time: 1548.0
+Particle Current Fitness Cost: 0.006993006993006993
+Particle Best Fitness Cost: 0.006993006993006993
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 7
+Vehicles Arrived: 96
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11943.0
+Vehicles Total Wait Time: 5252.0
+Particle Current Fitness Cost: 0.010416666666666666
+Particle Best Fitness Cost: 0.010416666666666666
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 8
+Vehicles Arrived: 127
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 10380.0
+Vehicles Total Wait Time: 4037.0
+Particle Current Fitness Cost: 0.007874015748031496
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 9
+Vehicles Arrived: 51
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10606.0
+Vehicles Total Wait Time: 5623.0
+Particle Current Fitness Cost: 0.0196078431372549
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 1
+Particle: 10
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5748.0
+Vehicles Total Wait Time: 250.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: inf
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 1
+Vehicles Arrived: 53
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9941.0
+Vehicles Total Wait Time: 4702.0
+Particle Current Fitness Cost: 0.018867924528301886
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 2
+Vehicles Arrived: 51
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10606.0
+Vehicles Total Wait Time: 5623.0
+Particle Current Fitness Cost: 0.0196078431372549
+Particle Best Fitness Cost: 0.015151515151515152
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 3
+Vehicles Arrived: 40
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 8585.0
+Vehicles Total Wait Time: 5173.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 4
+Vehicles Arrived: 43
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9252.0
+Vehicles Total Wait Time: 5330.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 5
+Vehicles Arrived: 71
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 11227.0
+Vehicles Total Wait Time: 5562.0
+Particle Current Fitness Cost: 0.014084507042253521
+Particle Best Fitness Cost: 0.01098901098901099
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 6
+Vehicles Arrived: 43
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9235.0
+Vehicles Total Wait Time: 5236.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.006993006993006993
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 7
+Vehicles Arrived: 50
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 9840.0
+Vehicles Total Wait Time: 4969.0
+Particle Current Fitness Cost: 0.02
+Particle Best Fitness Cost: 0.010416666666666666
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 8
+Vehicles Arrived: 78
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11445.0
+Vehicles Total Wait Time: 5391.0
+Particle Current Fitness Cost: 0.01282051282051282
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 9
+Vehicles Arrived: 51
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10606.0
+Vehicles Total Wait Time: 5623.0
+Particle Current Fitness Cost: 0.0196078431372549
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 2
+Particle: 10
+Vehicles Arrived: 111
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10861.0
+Vehicles Total Wait Time: 3141.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 1
+Vehicles Arrived: 115
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10484.0
+Vehicles Total Wait Time: 4460.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 2
+Vehicles Arrived: 68
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 11733.0
+Vehicles Total Wait Time: 5665.0
+Particle Current Fitness Cost: 0.014705882352941176
+Particle Best Fitness Cost: 0.014705882352941176
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 3
+Vehicles Arrived: 55
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10732.0
+Vehicles Total Wait Time: 5508.0
+Particle Current Fitness Cost: 0.01818181818181818
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 4
+Vehicles Arrived: 51
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10606.0
+Vehicles Total Wait Time: 5623.0
+Particle Current Fitness Cost: 0.0196078431372549
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 5
+Vehicles Arrived: 64
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11425.0
+Vehicles Total Wait Time: 6397.0
+Particle Current Fitness Cost: 0.015625
+Particle Best Fitness Cost: 0.01098901098901099
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 6
+Vehicles Arrived: 122
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10171.0
+Vehicles Total Wait Time: 3295.0
+Particle Current Fitness Cost: 0.00819672131147541
+Particle Best Fitness Cost: 0.006993006993006993
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 7
+Vehicles Arrived: 65
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 11334.0
+Vehicles Total Wait Time: 6226.0
+Particle Current Fitness Cost: 0.015384615384615385
+Particle Best Fitness Cost: 0.010416666666666666
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 8
+Vehicles Arrived: 73
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11184.0
+Vehicles Total Wait Time: 5577.0
+Particle Current Fitness Cost: 0.0136986301369863
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 9
+Vehicles Arrived: 40
+Vehicles not Arrived: 38
+Vehicles Total Trip Time: 8443.0
+Vehicles Total Wait Time: 4976.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 3
+Particle: 10
+Vehicles Arrived: 57
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11058.0
+Vehicles Total Wait Time: 5708.0
+Particle Current Fitness Cost: 0.017543859649122806
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 1
+Vehicles Arrived: 69
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 10556.0
+Vehicles Total Wait Time: 5587.0
+Particle Current Fitness Cost: 0.014492753623188406
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 2
+Vehicles Arrived: 59
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10934.0
+Vehicles Total Wait Time: 5687.0
+Particle Current Fitness Cost: 0.01694915254237288
+Particle Best Fitness Cost: 0.014705882352941176
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 3
+Vehicles Arrived: 70
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10947.0
+Vehicles Total Wait Time: 3815.0
+Particle Current Fitness Cost: 0.014285714285714285
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 4
+Vehicles Arrived: 153
+Vehicles not Arrived: 14
+Vehicles Total Trip Time: 5422.0
+Vehicles Total Wait Time: 92.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 5
+Vehicles Arrived: 43
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9252.0
+Vehicles Total Wait Time: 5330.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.01098901098901099
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 6
+Vehicles Arrived: 87
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10959.0
+Vehicles Total Wait Time: 5182.0
+Particle Current Fitness Cost: 0.011494252873563218
+Particle Best Fitness Cost: 0.006993006993006993
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 7
+Vehicles Arrived: 45
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9447.0
+Vehicles Total Wait Time: 5454.0
+Particle Current Fitness Cost: 0.022222222222222223
+Particle Best Fitness Cost: 0.010416666666666666
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 8
+Vehicles Arrived: 108
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10426.0
+Vehicles Total Wait Time: 4385.0
+Particle Current Fitness Cost: 0.009259259259259259
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 9
+Vehicles Arrived: 44
+Vehicles not Arrived: 39
+Vehicles Total Trip Time: 8737.0
+Vehicles Total Wait Time: 4669.0
+Particle Current Fitness Cost: 0.022727272727272728
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 4
+Particle: 10
+Vehicles Arrived: 55
+Vehicles not Arrived: 38
+Vehicles Total Trip Time: 10030.0
+Vehicles Total Wait Time: 5240.0
+Particle Current Fitness Cost: 0.01818181818181818
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: 0.006578947368421052
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 1
+Vehicles Arrived: 133
+Vehicles not Arrived: 22
+Vehicles Total Trip Time: 10348.0
+Vehicles Total Wait Time: 3306.0
+Particle Current Fitness Cost: 0.007518796992481203
+Particle Best Fitness Cost: 0.007518796992481203
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 2
+Vehicles Arrived: 43
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9252.0
+Vehicles Total Wait Time: 5330.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.014705882352941176
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 3
+Vehicles Arrived: 40
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9126.0
+Vehicles Total Wait Time: 5705.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 4
+Vehicles Arrived: 40
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 8585.0
+Vehicles Total Wait Time: 5173.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 5
+Vehicles Arrived: 103
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11448.0
+Vehicles Total Wait Time: 5264.0
+Particle Current Fitness Cost: 0.009708737864077669
+Particle Best Fitness Cost: 0.009708737864077669
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 6
+Vehicles Arrived: 83
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10977.0
+Vehicles Total Wait Time: 5030.0
+Particle Current Fitness Cost: 0.012048192771084338
+Particle Best Fitness Cost: 0.006993006993006993
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 7
+Vehicles Arrived: 43
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9235.0
+Vehicles Total Wait Time: 5236.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.010416666666666666
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 8
+Vehicles Arrived: 50
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9958.0
+Vehicles Total Wait Time: 5345.0
+Particle Current Fitness Cost: 0.02
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 9
+Vehicles Arrived: 43
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 8795.0
+Vehicles Total Wait Time: 4867.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 5
+Particle: 10
+Vehicles Arrived: 153
+Vehicles not Arrived: 14
+Vehicles Total Trip Time: 5690.0
+Vehicles Total Wait Time: 222.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 1
+Vehicles Arrived: 84
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 11045.0
+Vehicles Total Wait Time: 4898.0
+Particle Current Fitness Cost: 0.011904761904761904
+Particle Best Fitness Cost: 0.007518796992481203
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 2
+Vehicles Arrived: 43
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9235.0
+Vehicles Total Wait Time: 5236.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.014705882352941176
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 3
+Vehicles Arrived: 69
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11252.0
+Vehicles Total Wait Time: 4718.0
+Particle Current Fitness Cost: 0.014492753623188406
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 4
+Vehicles Arrived: 114
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10481.0
+Vehicles Total Wait Time: 2535.0
+Particle Current Fitness Cost: 0.008771929824561403
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 5
+Vehicles Arrived: 107
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 10759.0
+Vehicles Total Wait Time: 4814.0
+Particle Current Fitness Cost: 0.009345794392523364
+Particle Best Fitness Cost: 0.009345794392523364
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 6
+Vehicles Arrived: 99
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10861.0
+Vehicles Total Wait Time: 4287.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.006993006993006993
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 7
+Vehicles Arrived: 98
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10444.0
+Vehicles Total Wait Time: 4268.0
+Particle Current Fitness Cost: 0.01020408163265306
+Particle Best Fitness Cost: 0.01020408163265306
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 8
+Vehicles Arrived: 40
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 8585.0
+Vehicles Total Wait Time: 5173.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 9
+Vehicles Arrived: 43
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9235.0
+Vehicles Total Wait Time: 5236.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 6
+Particle: 10
+Vehicles Arrived: 72
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11325.0
+Vehicles Total Wait Time: 5469.0
+Particle Current Fitness Cost: 0.013888888888888888
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 1
+Vehicles Arrived: 83
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10943.0
+Vehicles Total Wait Time: 5302.0
+Particle Current Fitness Cost: 0.012048192771084338
+Particle Best Fitness Cost: 0.007518796992481203
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 2
+Vehicles Arrived: 55
+Vehicles not Arrived: 39
+Vehicles Total Trip Time: 9947.0
+Vehicles Total Wait Time: 5502.0
+Particle Current Fitness Cost: 0.01818181818181818
+Particle Best Fitness Cost: 0.014705882352941176
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 3
+Vehicles Arrived: 69
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10778.0
+Vehicles Total Wait Time: 4314.0
+Particle Current Fitness Cost: 0.014492753623188406
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 4
+Vehicles Arrived: 45
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9447.0
+Vehicles Total Wait Time: 5454.0
+Particle Current Fitness Cost: 0.022222222222222223
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 5
+Vehicles Arrived: 113
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 10992.0
+Vehicles Total Wait Time: 4761.0
+Particle Current Fitness Cost: 0.008849557522123894
+Particle Best Fitness Cost: 0.008849557522123894
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 6
+Vehicles Arrived: 55
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 10312.0
+Vehicles Total Wait Time: 5763.0
+Particle Current Fitness Cost: 0.01818181818181818
+Particle Best Fitness Cost: 0.006993006993006993
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 7
+Vehicles Arrived: 40
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9126.0
+Vehicles Total Wait Time: 5705.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.01020408163265306
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 8
+Vehicles Arrived: 96
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 10374.0
+Vehicles Total Wait Time: 4761.0
+Particle Current Fitness Cost: 0.010416666666666666
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 9
+Vehicles Arrived: 41
+Vehicles not Arrived: 38
+Vehicles Total Trip Time: 8694.0
+Vehicles Total Wait Time: 5155.0
+Particle Current Fitness Cost: 0.024390243902439025
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 7
+Particle: 10
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5572.0
+Vehicles Total Wait Time: 173.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006535947712418301
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 1
+Vehicles Arrived: 73
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11665.0
+Vehicles Total Wait Time: 5781.0
+Particle Current Fitness Cost: 0.0136986301369863
+Particle Best Fitness Cost: 0.007518796992481203
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 2
+Vehicles Arrived: 71
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 11638.0
+Vehicles Total Wait Time: 5345.0
+Particle Current Fitness Cost: 0.014084507042253521
+Particle Best Fitness Cost: 0.014084507042253521
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 3
+Vehicles Arrived: 70
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10947.0
+Vehicles Total Wait Time: 3815.0
+Particle Current Fitness Cost: 0.014285714285714285
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 4
+Vehicles Arrived: 153
+Vehicles not Arrived: 14
+Vehicles Total Trip Time: 5422.0
+Vehicles Total Wait Time: 92.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 5
+Vehicles Arrived: 40
+Vehicles not Arrived: 38
+Vehicles Total Trip Time: 8443.0
+Vehicles Total Wait Time: 4976.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.008849557522123894
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 6
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 6156.0
+Vehicles Total Wait Time: 471.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 7
+Vehicles Arrived: 93
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11842.0
+Vehicles Total Wait Time: 4967.0
+Particle Current Fitness Cost: 0.010752688172043012
+Particle Best Fitness Cost: 0.01020408163265306
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 8
+Vehicles Arrived: 69
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11288.0
+Vehicles Total Wait Time: 5892.0
+Particle Current Fitness Cost: 0.014492753623188406
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 9
+Vehicles Arrived: 43
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 8795.0
+Vehicles Total Wait Time: 4867.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.0196078431372549
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 8
+Particle: 10
+Vehicles Arrived: 68
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 11118.0
+Vehicles Total Wait Time: 5319.0
+Particle Current Fitness Cost: 0.014705882352941176
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006493506493506494
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 1
+Vehicles Arrived: 158
+Vehicles not Arrived: 9
+Vehicles Total Trip Time: 6509.0
+Vehicles Total Wait Time: 593.0
+Particle Current Fitness Cost: 0.006329113924050633
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 2
+Vehicles Arrived: 81
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11780.0
+Vehicles Total Wait Time: 5118.0
+Particle Current Fitness Cost: 0.012345679012345678
+Particle Best Fitness Cost: 0.012345679012345678
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 3
+Vehicles Arrived: 65
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 10566.0
+Vehicles Total Wait Time: 4741.0
+Particle Current Fitness Cost: 0.015384615384615385
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 4
+Vehicles Arrived: 75
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 10897.0
+Vehicles Total Wait Time: 4939.0
+Particle Current Fitness Cost: 0.013333333333333334
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 5
+Vehicles Arrived: 106
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10633.0
+Vehicles Total Wait Time: 4503.0
+Particle Current Fitness Cost: 0.009433962264150943
+Particle Best Fitness Cost: 0.008849557522123894
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 6
+Vehicles Arrived: 44
+Vehicles not Arrived: 39
+Vehicles Total Trip Time: 8737.0
+Vehicles Total Wait Time: 4669.0
+Particle Current Fitness Cost: 0.022727272727272728
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 7
+Vehicles Arrived: 90
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10826.0
+Vehicles Total Wait Time: 4267.0
+Particle Current Fitness Cost: 0.011111111111111112
+Particle Best Fitness Cost: 0.01020408163265306
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 8
+Vehicles Arrived: 145
+Vehicles not Arrived: 22
+Vehicles Total Trip Time: 7979.0
+Vehicles Total Wait Time: 1566.0
+Particle Current Fitness Cost: 0.006896551724137931
+Particle Best Fitness Cost: 0.006896551724137931
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 9
+Vehicles Arrived: 66
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10761.0
+Vehicles Total Wait Time: 4696.0
+Particle Current Fitness Cost: 0.015151515151515152
+Particle Best Fitness Cost: 0.015151515151515152
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 9
+Particle: 10
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.00641025641025641
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 1
+Vehicles Arrived: 100
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11356.0
+Vehicles Total Wait Time: 4345.0
+Particle Current Fitness Cost: 0.01
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 2
+Vehicles Arrived: 50
+Vehicles not Arrived: 39
+Vehicles Total Trip Time: 9435.0
+Vehicles Total Wait Time: 4860.0
+Particle Current Fitness Cost: 0.02
+Particle Best Fitness Cost: 0.012345679012345678
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 3
+Vehicles Arrived: 65
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 11570.0
+Vehicles Total Wait Time: 4687.0
+Particle Current Fitness Cost: 0.015384615384615385
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 4
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5552.0
+Vehicles Total Wait Time: 126.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 5
+Vehicles Arrived: 43
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9252.0
+Vehicles Total Wait Time: 5330.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.008849557522123894
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 6
+Vehicles Arrived: 127
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 10118.0
+Vehicles Total Wait Time: 2995.0
+Particle Current Fitness Cost: 0.007874015748031496
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 7
+Vehicles Arrived: 109
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 11388.0
+Vehicles Total Wait Time: 4821.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 8
+Vehicles Arrived: 51
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 9793.0
+Vehicles Total Wait Time: 4840.0
+Particle Current Fitness Cost: 0.0196078431372549
+Particle Best Fitness Cost: 0.006896551724137931
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 9
+Vehicles Arrived: 72
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11428.0
+Vehicles Total Wait Time: 4632.0
+Particle Current Fitness Cost: 0.013888888888888888
+Particle Best Fitness Cost: 0.013888888888888888
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 10
+Particle: 10
+Vehicles Arrived: 88
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11608.0
+Vehicles Total Wait Time: 3623.0
+Particle Current Fitness Cost: 0.011363636363636364
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 1
+Vehicles Arrived: 111
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11177.0
+Vehicles Total Wait Time: 3908.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 2
+Vehicles Arrived: 104
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11446.0
+Vehicles Total Wait Time: 4278.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.009615384615384616
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 3
+Vehicles Arrived: 64
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 10439.0
+Vehicles Total Wait Time: 3782.0
+Particle Current Fitness Cost: 0.015625
+Particle Best Fitness Cost: 0.0125
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 4
+Vehicles Arrived: 111
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 10830.0
+Vehicles Total Wait Time: 3538.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 5
+Vehicles Arrived: 100
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11416.0
+Vehicles Total Wait Time: 4875.0
+Particle Current Fitness Cost: 0.01
+Particle Best Fitness Cost: 0.008849557522123894
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 6
+Vehicles Arrived: 149
+Vehicles not Arrived: 18
+Vehicles Total Trip Time: 6224.0
+Vehicles Total Wait Time: 595.0
+Particle Current Fitness Cost: 0.006711409395973154
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 7
+Vehicles Arrived: 106
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10633.0
+Vehicles Total Wait Time: 4503.0
+Particle Current Fitness Cost: 0.009433962264150943
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 8
+Vehicles Arrived: 48
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10099.0
+Vehicles Total Wait Time: 5359.0
+Particle Current Fitness Cost: 0.020833333333333332
+Particle Best Fitness Cost: 0.006896551724137931
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 9
+Vehicles Arrived: 115
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 10735.0
+Vehicles Total Wait Time: 3989.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 11
+Particle: 10
+Vehicles Arrived: 157
+Vehicles not Arrived: 9
+Vehicles Total Trip Time: 6281.0
+Vehicles Total Wait Time: 532.0
+Particle Current Fitness Cost: 0.006369426751592357
+Particle Best Fitness Cost: 0.006369426751592357
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 1
+Vehicles Arrived: 158
+Vehicles not Arrived: 8
+Vehicles Total Trip Time: 6484.0
+Vehicles Total Wait Time: 590.0
+Particle Current Fitness Cost: 0.006329113924050633
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 2
+Vehicles Arrived: 112
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10444.0
+Vehicles Total Wait Time: 3461.0
+Particle Current Fitness Cost: 0.008928571428571428
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 3
+Vehicles Arrived: 102
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11553.0
+Vehicles Total Wait Time: 4097.0
+Particle Current Fitness Cost: 0.00980392156862745
+Particle Best Fitness Cost: 0.00980392156862745
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 4
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5468.0
+Vehicles Total Wait Time: 103.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 5
+Vehicles Arrived: 126
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 9045.0
+Vehicles Total Wait Time: 3112.0
+Particle Current Fitness Cost: 0.007936507936507936
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 6
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 7617.0
+Vehicles Total Wait Time: 1340.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 7
+Vehicles Arrived: 99
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10861.0
+Vehicles Total Wait Time: 4287.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 8
+Vehicles Arrived: 150
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5712.0
+Vehicles Total Wait Time: 352.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 9
+Vehicles Arrived: 115
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 10735.0
+Vehicles Total Wait Time: 3989.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 12
+Particle: 10
+Vehicles Arrived: 158
+Vehicles not Arrived: 8
+Vehicles Total Trip Time: 6484.0
+Vehicles Total Wait Time: 590.0
+Particle Current Fitness Cost: 0.006329113924050633
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 1
+Vehicles Arrived: 68
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 11118.0
+Vehicles Total Wait Time: 5319.0
+Particle Current Fitness Cost: 0.014705882352941176
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 2
+Vehicles Arrived: 104
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 11237.0
+Vehicles Total Wait Time: 4038.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 3
+Vehicles Arrived: 109
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10860.0
+Vehicles Total Wait Time: 4137.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 4
+Vehicles Arrived: 109
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11222.0
+Vehicles Total Wait Time: 3643.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 5
+Vehicles Arrived: 115
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10281.0
+Vehicles Total Wait Time: 3651.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 6
+Vehicles Arrived: 137
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 10140.0
+Vehicles Total Wait Time: 2645.0
+Particle Current Fitness Cost: 0.0072992700729927005
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 7
+Vehicles Arrived: 103
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11436.0
+Vehicles Total Wait Time: 4721.0
+Particle Current Fitness Cost: 0.009708737864077669
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 8
+Vehicles Arrived: 133
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 8400.0
+Vehicles Total Wait Time: 2059.0
+Particle Current Fitness Cost: 0.007518796992481203
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 9
+Vehicles Arrived: 104
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10391.0
+Vehicles Total Wait Time: 4069.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 13
+Particle: 10
+Vehicles Arrived: 140
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 7609.0
+Vehicles Total Wait Time: 1484.0
+Particle Current Fitness Cost: 0.007142857142857143
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 1
+Vehicles Arrived: 150
+Vehicles not Arrived: 17
+Vehicles Total Trip Time: 5930.0
+Vehicles Total Wait Time: 451.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 2
+Vehicles Arrived: 104
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11446.0
+Vehicles Total Wait Time: 4278.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 3
+Vehicles Arrived: 104
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11735.0
+Vehicles Total Wait Time: 4881.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 4
+Vehicles Arrived: 99
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11745.0
+Vehicles Total Wait Time: 4695.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 5
+Vehicles Arrived: 125
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 9137.0
+Vehicles Total Wait Time: 3295.0
+Particle Current Fitness Cost: 0.008
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 6
+Vehicles Arrived: 132
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 10023.0
+Vehicles Total Wait Time: 2746.0
+Particle Current Fitness Cost: 0.007575757575757576
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 7
+Vehicles Arrived: 110
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10526.0
+Vehicles Total Wait Time: 4482.0
+Particle Current Fitness Cost: 0.00909090909090909
+Particle Best Fitness Cost: 0.00909090909090909
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 8
+Vehicles Arrived: 145
+Vehicles not Arrived: 22
+Vehicles Total Trip Time: 7110.0
+Vehicles Total Wait Time: 940.0
+Particle Current Fitness Cost: 0.006896551724137931
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 9
+Vehicles Arrived: 109
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10860.0
+Vehicles Total Wait Time: 4137.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 14
+Particle: 10
+Vehicles Arrived: 119
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 10717.0
+Vehicles Total Wait Time: 3525.0
+Particle Current Fitness Cost: 0.008403361344537815
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 1
+Vehicles Arrived: 73
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11665.0
+Vehicles Total Wait Time: 5781.0
+Particle Current Fitness Cost: 0.0136986301369863
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 2
+Vehicles Arrived: 111
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11177.0
+Vehicles Total Wait Time: 3908.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 3
+Vehicles Arrived: 104
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11446.0
+Vehicles Total Wait Time: 4278.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 4
+Vehicles Arrived: 137
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 9414.0
+Vehicles Total Wait Time: 1899.0
+Particle Current Fitness Cost: 0.0072992700729927005
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 5
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 6
+Vehicles Arrived: 101
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10553.0
+Vehicles Total Wait Time: 3503.0
+Particle Current Fitness Cost: 0.009900990099009901
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 7
+Vehicles Arrived: 86
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11550.0
+Vehicles Total Wait Time: 3952.0
+Particle Current Fitness Cost: 0.011627906976744186
+Particle Best Fitness Cost: 0.00909090909090909
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 8
+Vehicles Arrived: 98
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10974.0
+Vehicles Total Wait Time: 4855.0
+Particle Current Fitness Cost: 0.01020408163265306
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 9
+Vehicles Arrived: 99
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11229.0
+Vehicles Total Wait Time: 4191.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 15
+Particle: 10
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 6457.0
+Vehicles Total Wait Time: 625.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 1
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5688.0
+Vehicles Total Wait Time: 280.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 2
+Vehicles Arrived: 105
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10872.0
+Vehicles Total Wait Time: 4058.0
+Particle Current Fitness Cost: 0.009523809523809525
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 3
+Vehicles Arrived: 105
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10872.0
+Vehicles Total Wait Time: 4058.0
+Particle Current Fitness Cost: 0.009523809523809525
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 4
+Vehicles Arrived: 144
+Vehicles not Arrived: 23
+Vehicles Total Trip Time: 7818.0
+Vehicles Total Wait Time: 1132.0
+Particle Current Fitness Cost: 0.006944444444444444
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 5
+Vehicles Arrived: 119
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 9867.0
+Vehicles Total Wait Time: 3253.0
+Particle Current Fitness Cost: 0.008403361344537815
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 6
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 7654.0
+Vehicles Total Wait Time: 1277.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 7
+Vehicles Arrived: 115
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10484.0
+Vehicles Total Wait Time: 4460.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.008695652173913044
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 8
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 9
+Vehicles Arrived: 117
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 9829.0
+Vehicles Total Wait Time: 3656.0
+Particle Current Fitness Cost: 0.008547008547008548
+Particle Best Fitness Cost: 0.008547008547008548
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 16
+Particle: 10
+Vehicles Arrived: 60
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10824.0
+Vehicles Total Wait Time: 5362.0
+Particle Current Fitness Cost: 0.016666666666666666
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 1
+Vehicles Arrived: 83
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11159.0
+Vehicles Total Wait Time: 5616.0
+Particle Current Fitness Cost: 0.012048192771084338
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 2
+Vehicles Arrived: 102
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11553.0
+Vehicles Total Wait Time: 4097.0
+Particle Current Fitness Cost: 0.00980392156862745
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 3
+Vehicles Arrived: 103
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11436.0
+Vehicles Total Wait Time: 4721.0
+Particle Current Fitness Cost: 0.009708737864077669
+Particle Best Fitness Cost: 0.009174311926605505
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 4
+Vehicles Arrived: 144
+Vehicles not Arrived: 23
+Vehicles Total Trip Time: 7818.0
+Vehicles Total Wait Time: 1132.0
+Particle Current Fitness Cost: 0.006944444444444444
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 5
+Vehicles Arrived: 109
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10914.0
+Vehicles Total Wait Time: 4565.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 6
+Vehicles Arrived: 112
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11087.0
+Vehicles Total Wait Time: 4166.0
+Particle Current Fitness Cost: 0.008928571428571428
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 7
+Vehicles Arrived: 116
+Vehicles not Arrived: 22
+Vehicles Total Trip Time: 11126.0
+Vehicles Total Wait Time: 4844.0
+Particle Current Fitness Cost: 0.008620689655172414
+Particle Best Fitness Cost: 0.008620689655172414
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 8
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 9
+Vehicles Arrived: 122
+Vehicles not Arrived: 23
+Vehicles Total Trip Time: 10997.0
+Vehicles Total Wait Time: 4091.0
+Particle Current Fitness Cost: 0.00819672131147541
+Particle Best Fitness Cost: 0.00819672131147541
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 17
+Particle: 10
+Vehicles Arrived: 155
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 5636.0
+Vehicles Total Wait Time: 243.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 1
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 2
+Vehicles Arrived: 129
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 10560.0
+Vehicles Total Wait Time: 3116.0
+Particle Current Fitness Cost: 0.007751937984496124
+Particle Best Fitness Cost: 0.007751937984496124
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 3
+Vehicles Arrived: 112
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11087.0
+Vehicles Total Wait Time: 4166.0
+Particle Current Fitness Cost: 0.008928571428571428
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 4
+Vehicles Arrived: 100
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11356.0
+Vehicles Total Wait Time: 4345.0
+Particle Current Fitness Cost: 0.01
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 5
+Vehicles Arrived: 126
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 9999.0
+Vehicles Total Wait Time: 3507.0
+Particle Current Fitness Cost: 0.007936507936507936
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 6
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5087.0
+Vehicles Total Wait Time: 100.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 7
+Vehicles Arrived: 100
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11356.0
+Vehicles Total Wait Time: 4345.0
+Particle Current Fitness Cost: 0.01
+Particle Best Fitness Cost: 0.008620689655172414
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 8
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 5882.0
+Vehicles Total Wait Time: 271.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 9
+Vehicles Arrived: 104
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11446.0
+Vehicles Total Wait Time: 4278.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.00819672131147541
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 18
+Particle: 10
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 7137.0
+Vehicles Total Wait Time: 1259.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 1
+Vehicles Arrived: 65
+Vehicles not Arrived: 39
+Vehicles Total Trip Time: 10280.0
+Vehicles Total Wait Time: 5582.0
+Particle Current Fitness Cost: 0.015384615384615385
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 2
+Vehicles Arrived: 77
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10795.0
+Vehicles Total Wait Time: 4825.0
+Particle Current Fitness Cost: 0.012987012987012988
+Particle Best Fitness Cost: 0.007751937984496124
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 3
+Vehicles Arrived: 93
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 10885.0
+Vehicles Total Wait Time: 4233.0
+Particle Current Fitness Cost: 0.010752688172043012
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 4
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5972.0
+Vehicles Total Wait Time: 245.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 5
+Vehicles Arrived: 88
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11672.0
+Vehicles Total Wait Time: 4354.0
+Particle Current Fitness Cost: 0.011363636363636364
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 6
+Vehicles Arrived: 138
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 8634.0
+Vehicles Total Wait Time: 2088.0
+Particle Current Fitness Cost: 0.007246376811594203
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 7
+Vehicles Arrived: 93
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 10885.0
+Vehicles Total Wait Time: 4233.0
+Particle Current Fitness Cost: 0.010752688172043012
+Particle Best Fitness Cost: 0.008620689655172414
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 8
+Vehicles Arrived: 135
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 9436.0
+Vehicles Total Wait Time: 1991.0
+Particle Current Fitness Cost: 0.007407407407407408
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 9
+Vehicles Arrived: 115
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11107.0
+Vehicles Total Wait Time: 4419.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.00819672131147541
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 19
+Particle: 10
+Vehicles Arrived: 65
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 11037.0
+Vehicles Total Wait Time: 4425.0
+Particle Current Fitness Cost: 0.015384615384615385
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 1
+Vehicles Arrived: 104
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10391.0
+Vehicles Total Wait Time: 4069.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 2
+Vehicles Arrived: 150
+Vehicles not Arrived: 17
+Vehicles Total Trip Time: 6072.0
+Vehicles Total Wait Time: 520.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 3
+Vehicles Arrived: 105
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10872.0
+Vehicles Total Wait Time: 4058.0
+Particle Current Fitness Cost: 0.009523809523809525
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 4
+Vehicles Arrived: 78
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 10682.0
+Vehicles Total Wait Time: 4861.0
+Particle Current Fitness Cost: 0.01282051282051282
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 5
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 6
+Vehicles Arrived: 153
+Vehicles not Arrived: 14
+Vehicles Total Trip Time: 7496.0
+Vehicles Total Wait Time: 1234.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 7
+Vehicles Arrived: 105
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10888.0
+Vehicles Total Wait Time: 4361.0
+Particle Current Fitness Cost: 0.009523809523809525
+Particle Best Fitness Cost: 0.008620689655172414
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 8
+Vehicles Arrived: 151
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 6633.0
+Vehicles Total Wait Time: 680.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 9
+Vehicles Arrived: 122
+Vehicles not Arrived: 23
+Vehicles Total Trip Time: 10997.0
+Vehicles Total Wait Time: 4091.0
+Particle Current Fitness Cost: 0.00819672131147541
+Particle Best Fitness Cost: 0.00819672131147541
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 20
+Particle: 10
+Vehicles Arrived: 146
+Vehicles not Arrived: 21
+Vehicles Total Trip Time: 6293.0
+Vehicles Total Wait Time: 733.0
+Particle Current Fitness Cost: 0.00684931506849315
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 1
+Vehicles Arrived: 150
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 6725.0
+Vehicles Total Wait Time: 786.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 2
+Vehicles Arrived: 109
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 10239.0
+Vehicles Total Wait Time: 3483.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 3
+Vehicles Arrived: 112
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11087.0
+Vehicles Total Wait Time: 4166.0
+Particle Current Fitness Cost: 0.008928571428571428
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 4
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5758.0
+Vehicles Total Wait Time: 166.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 5
+Vehicles Arrived: 125
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 9137.0
+Vehicles Total Wait Time: 3295.0
+Particle Current Fitness Cost: 0.008
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 6
+Vehicles Arrived: 90
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11856.0
+Vehicles Total Wait Time: 4761.0
+Particle Current Fitness Cost: 0.011111111111111112
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 7
+Vehicles Arrived: 115
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 10916.0
+Vehicles Total Wait Time: 4733.0
+Particle Current Fitness Cost: 0.008695652173913044
+Particle Best Fitness Cost: 0.008620689655172414
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 8
+Vehicles Arrived: 72
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11325.0
+Vehicles Total Wait Time: 5469.0
+Particle Current Fitness Cost: 0.013888888888888888
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 9
+Vehicles Arrived: 72
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11428.0
+Vehicles Total Wait Time: 4632.0
+Particle Current Fitness Cost: 0.013888888888888888
+Particle Best Fitness Cost: 0.00819672131147541
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 21
+Particle: 10
+Vehicles Arrived: 143
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 7497.0
+Vehicles Total Wait Time: 1548.0
+Particle Current Fitness Cost: 0.006993006993006993
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 1
+Vehicles Arrived: 131
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 8815.0
+Vehicles Total Wait Time: 2250.0
+Particle Current Fitness Cost: 0.007633587786259542
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 2
+Vehicles Arrived: 91
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11272.0
+Vehicles Total Wait Time: 4538.0
+Particle Current Fitness Cost: 0.01098901098901099
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 3
+Vehicles Arrived: 105
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10872.0
+Vehicles Total Wait Time: 4058.0
+Particle Current Fitness Cost: 0.009523809523809525
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 4
+Vehicles Arrived: 91
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11272.0
+Vehicles Total Wait Time: 4538.0
+Particle Current Fitness Cost: 0.01098901098901099
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 5
+Vehicles Arrived: 75
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 11099.0
+Vehicles Total Wait Time: 2949.0
+Particle Current Fitness Cost: 0.013333333333333334
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 6
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 6232.0
+Vehicles Total Wait Time: 555.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 7
+Vehicles Arrived: 80
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10931.0
+Vehicles Total Wait Time: 3205.0
+Particle Current Fitness Cost: 0.0125
+Particle Best Fitness Cost: 0.008620689655172414
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 8
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 9
+Vehicles Arrived: 80
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 11525.0
+Vehicles Total Wait Time: 4587.0
+Particle Current Fitness Cost: 0.0125
+Particle Best Fitness Cost: 0.00819672131147541
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 22
+Particle: 10
+Vehicles Arrived: 52
+Vehicles not Arrived: 37
+Vehicles Total Trip Time: 9512.0
+Vehicles Total Wait Time: 4462.0
+Particle Current Fitness Cost: 0.019230769230769232
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 1
+Vehicles Arrived: 111
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 10830.0
+Vehicles Total Wait Time: 3538.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 2
+Vehicles Arrived: 153
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5886.0
+Vehicles Total Wait Time: 386.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 3
+Vehicles Arrived: 96
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10928.0
+Vehicles Total Wait Time: 4281.0
+Particle Current Fitness Cost: 0.010416666666666666
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 4
+Vehicles Arrived: 136
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 8604.0
+Vehicles Total Wait Time: 1463.0
+Particle Current Fitness Cost: 0.007352941176470588
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 5
+Vehicles Arrived: 106
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 10440.0
+Vehicles Total Wait Time: 3260.0
+Particle Current Fitness Cost: 0.009433962264150943
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 6
+Vehicles Arrived: 139
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 8105.0
+Vehicles Total Wait Time: 1813.0
+Particle Current Fitness Cost: 0.007194244604316547
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 7
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 8
+Vehicles Arrived: 110
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10505.0
+Vehicles Total Wait Time: 3287.0
+Particle Current Fitness Cost: 0.00909090909090909
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 9
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 23
+Particle: 10
+Vehicles Arrived: 75
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10878.0
+Vehicles Total Wait Time: 4156.0
+Particle Current Fitness Cost: 0.013333333333333334
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 1
+Vehicles Arrived: 130
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 8888.0
+Vehicles Total Wait Time: 2431.0
+Particle Current Fitness Cost: 0.007692307692307693
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 2
+Vehicles Arrived: 109
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 10239.0
+Vehicles Total Wait Time: 3483.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 3
+Vehicles Arrived: 104
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 11237.0
+Vehicles Total Wait Time: 4038.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 4
+Vehicles Arrived: 120
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10361.0
+Vehicles Total Wait Time: 2820.0
+Particle Current Fitness Cost: 0.008333333333333333
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 5
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 6
+Vehicles Arrived: 112
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10444.0
+Vehicles Total Wait Time: 3461.0
+Particle Current Fitness Cost: 0.008928571428571428
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 7
+Vehicles Arrived: 98
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11843.0
+Vehicles Total Wait Time: 5146.0
+Particle Current Fitness Cost: 0.01020408163265306
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 8
+Vehicles Arrived: 101
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10553.0
+Vehicles Total Wait Time: 3503.0
+Particle Current Fitness Cost: 0.009900990099009901
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 9
+Vehicles Arrived: 104
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 11237.0
+Vehicles Total Wait Time: 4038.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 24
+Particle: 10
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 7137.0
+Vehicles Total Wait Time: 1259.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 1
+Vehicles Arrived: 158
+Vehicles not Arrived: 9
+Vehicles Total Trip Time: 6509.0
+Vehicles Total Wait Time: 593.0
+Particle Current Fitness Cost: 0.006329113924050633
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 2
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5502.0
+Vehicles Total Wait Time: 267.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 3
+Vehicles Arrived: 98
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10444.0
+Vehicles Total Wait Time: 4268.0
+Particle Current Fitness Cost: 0.01020408163265306
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 4
+Vehicles Arrived: 137
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 9414.0
+Vehicles Total Wait Time: 1899.0
+Particle Current Fitness Cost: 0.0072992700729927005
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 5
+Vehicles Arrived: 119
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 9799.0
+Vehicles Total Wait Time: 3878.0
+Particle Current Fitness Cost: 0.008403361344537815
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 6
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 6156.0
+Vehicles Total Wait Time: 471.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 7
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 8
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5346.0
+Vehicles Total Wait Time: 123.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 9
+Vehicles Arrived: 93
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11012.0
+Vehicles Total Wait Time: 4474.0
+Particle Current Fitness Cost: 0.010752688172043012
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 25
+Particle: 10
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5502.0
+Vehicles Total Wait Time: 267.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 1
+Vehicles Arrived: 91
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11272.0
+Vehicles Total Wait Time: 4538.0
+Particle Current Fitness Cost: 0.01098901098901099
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 2
+Vehicles Arrived: 110
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 10930.0
+Vehicles Total Wait Time: 4009.0
+Particle Current Fitness Cost: 0.00909090909090909
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 3
+Vehicles Arrived: 96
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11306.0
+Vehicles Total Wait Time: 3737.0
+Particle Current Fitness Cost: 0.010416666666666666
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 4
+Vehicles Arrived: 91
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11272.0
+Vehicles Total Wait Time: 4538.0
+Particle Current Fitness Cost: 0.01098901098901099
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 5
+Vehicles Arrived: 88
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10980.0
+Vehicles Total Wait Time: 1741.0
+Particle Current Fitness Cost: 0.011363636363636364
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 6
+Vehicles Arrived: 82
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10919.0
+Vehicles Total Wait Time: 4582.0
+Particle Current Fitness Cost: 0.012195121951219513
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 7
+Vehicles Arrived: 117
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10199.0
+Vehicles Total Wait Time: 3937.0
+Particle Current Fitness Cost: 0.008547008547008548
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 8
+Vehicles Arrived: 48
+Vehicles not Arrived: 39
+Vehicles Total Trip Time: 9300.0
+Vehicles Total Wait Time: 5314.0
+Particle Current Fitness Cost: 0.020833333333333332
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 9
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 26
+Particle: 10
+Vehicles Arrived: 71
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 11227.0
+Vehicles Total Wait Time: 5562.0
+Particle Current Fitness Cost: 0.014084507042253521
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 1
+Vehicles Arrived: 111
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11177.0
+Vehicles Total Wait Time: 3908.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 2
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5502.0
+Vehicles Total Wait Time: 267.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 3
+Vehicles Arrived: 112
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10743.0
+Vehicles Total Wait Time: 4352.0
+Particle Current Fitness Cost: 0.008928571428571428
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 4
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 5354.0
+Vehicles Total Wait Time: 86.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 5
+Vehicles Arrived: 125
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 10073.0
+Vehicles Total Wait Time: 3352.0
+Particle Current Fitness Cost: 0.008
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 6
+Vehicles Arrived: 153
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5886.0
+Vehicles Total Wait Time: 386.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 7
+Vehicles Arrived: 120
+Vehicles not Arrived: 22
+Vehicles Total Trip Time: 11148.0
+Vehicles Total Wait Time: 4734.0
+Particle Current Fitness Cost: 0.008333333333333333
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 8
+Vehicles Arrived: 142
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 8326.0
+Vehicles Total Wait Time: 1551.0
+Particle Current Fitness Cost: 0.007042253521126761
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 9
+Vehicles Arrived: 120
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 10083.0
+Vehicles Total Wait Time: 3860.0
+Particle Current Fitness Cost: 0.008333333333333333
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 27
+Particle: 10
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5087.0
+Vehicles Total Wait Time: 100.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 1
+Vehicles Arrived: 157
+Vehicles not Arrived: 9
+Vehicles Total Trip Time: 6281.0
+Vehicles Total Wait Time: 532.0
+Particle Current Fitness Cost: 0.006369426751592357
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 2
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 7617.0
+Vehicles Total Wait Time: 1340.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 3
+Vehicles Arrived: 99
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10861.0
+Vehicles Total Wait Time: 4287.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 4
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5779.0
+Vehicles Total Wait Time: 191.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 5
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 6
+Vehicles Arrived: 43
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9252.0
+Vehicles Total Wait Time: 5330.0
+Particle Current Fitness Cost: 0.023255813953488372
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 7
+Vehicles Arrived: 96
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10928.0
+Vehicles Total Wait Time: 4281.0
+Particle Current Fitness Cost: 0.010416666666666666
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 8
+Vehicles Arrived: 140
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 7721.0
+Vehicles Total Wait Time: 1314.0
+Particle Current Fitness Cost: 0.007142857142857143
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 9
+Vehicles Arrived: 73
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11408.0
+Vehicles Total Wait Time: 4762.0
+Particle Current Fitness Cost: 0.0136986301369863
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 28
+Particle: 10
+Vehicles Arrived: 153
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5886.0
+Vehicles Total Wait Time: 386.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 1
+Vehicles Arrived: 158
+Vehicles not Arrived: 8
+Vehicles Total Trip Time: 6484.0
+Vehicles Total Wait Time: 590.0
+Particle Current Fitness Cost: 0.006329113924050633
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 2
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 6379.0
+Vehicles Total Wait Time: 612.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 3
+Vehicles Arrived: 99
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10577.0
+Vehicles Total Wait Time: 3999.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 4
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5886.0
+Vehicles Total Wait Time: 238.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 5
+Vehicles Arrived: 109
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11222.0
+Vehicles Total Wait Time: 3643.0
+Particle Current Fitness Cost: 0.009174311926605505
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 6
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5087.0
+Vehicles Total Wait Time: 100.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 7
+Vehicles Arrived: 118
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 10672.0
+Vehicles Total Wait Time: 4137.0
+Particle Current Fitness Cost: 0.00847457627118644
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 8
+Vehicles Arrived: 90
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 10725.0
+Vehicles Total Wait Time: 4480.0
+Particle Current Fitness Cost: 0.011111111111111112
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 9
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 29
+Particle: 10
+Vehicles Arrived: 40
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 9126.0
+Vehicles Total Wait Time: 5705.0
+Particle Current Fitness Cost: 0.025
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 1
+Vehicles Arrived: 51
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 10606.0
+Vehicles Total Wait Time: 5623.0
+Particle Current Fitness Cost: 0.0196078431372549
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 2
+Vehicles Arrived: 137
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 10140.0
+Vehicles Total Wait Time: 2645.0
+Particle Current Fitness Cost: 0.0072992700729927005
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 3
+Vehicles Arrived: 107
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11040.0
+Vehicles Total Wait Time: 4146.0
+Particle Current Fitness Cost: 0.009345794392523364
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 4
+Vehicles Arrived: 137
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 8667.0
+Vehicles Total Wait Time: 1641.0
+Particle Current Fitness Cost: 0.0072992700729927005
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 5
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.007936507936507936
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 6
+Vehicles Arrived: 155
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 5636.0
+Vehicles Total Wait Time: 243.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 7
+Vehicles Arrived: 103
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11436.0
+Vehicles Total Wait Time: 4721.0
+Particle Current Fitness Cost: 0.009708737864077669
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 8
+Vehicles Arrived: 105
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 10535.0
+Vehicles Total Wait Time: 3801.0
+Particle Current Fitness Cost: 0.009523809523809525
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 9
+Vehicles Arrived: 117
+Vehicles not Arrived: 25
+Vehicles Total Trip Time: 10816.0
+Vehicles Total Wait Time: 4167.0
+Particle Current Fitness Cost: 0.008547008547008548
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 30
+Particle: 10
+Vehicles Arrived: 45
+Vehicles not Arrived: 38
+Vehicles Total Trip Time: 9027.0
+Vehicles Total Wait Time: 5059.0
+Particle Current Fitness Cost: 0.022222222222222223
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 1
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5502.0
+Vehicles Total Wait Time: 267.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 2
+Vehicles Arrived: 150
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 6164.0
+Vehicles Total Wait Time: 533.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 3
+Vehicles Arrived: 99
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11229.0
+Vehicles Total Wait Time: 4191.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 4
+Vehicles Arrived: 130
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 9820.0
+Vehicles Total Wait Time: 2391.0
+Particle Current Fitness Cost: 0.007692307692307693
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 5
+Vehicles Arrived: 132
+Vehicles not Arrived: 23
+Vehicles Total Trip Time: 10079.0
+Vehicles Total Wait Time: 3206.0
+Particle Current Fitness Cost: 0.007575757575757576
+Particle Best Fitness Cost: 0.007575757575757576
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 6
+Vehicles Arrived: 111
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 10724.0
+Vehicles Total Wait Time: 3889.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 7
+Vehicles Arrived: 127
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 9962.0
+Vehicles Total Wait Time: 3694.0
+Particle Current Fitness Cost: 0.007874015748031496
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 8
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 7981.0
+Vehicles Total Wait Time: 1325.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 9
+Vehicles Arrived: 116
+Vehicles not Arrived: 24
+Vehicles Total Trip Time: 11142.0
+Vehicles Total Wait Time: 4364.0
+Particle Current Fitness Cost: 0.008620689655172414
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 31
+Particle: 10
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5502.0
+Vehicles Total Wait Time: 267.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 1
+Vehicles Arrived: 84
+Vehicles not Arrived: 38
+Vehicles Total Trip Time: 10633.0
+Vehicles Total Wait Time: 4937.0
+Particle Current Fitness Cost: 0.011904761904761904
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 2
+Vehicles Arrived: 92
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11549.0
+Vehicles Total Wait Time: 4824.0
+Particle Current Fitness Cost: 0.010869565217391304
+Particle Best Fitness Cost: 0.006535947712418301
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 3
+Vehicles Arrived: 107
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11040.0
+Vehicles Total Wait Time: 4146.0
+Particle Current Fitness Cost: 0.009345794392523364
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 4
+Vehicles Arrived: 111
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 10830.0
+Vehicles Total Wait Time: 3538.0
+Particle Current Fitness Cost: 0.009009009009009009
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 5
+Vehicles Arrived: 97
+Vehicles not Arrived: 33
+Vehicles Total Trip Time: 10781.0
+Vehicles Total Wait Time: 3834.0
+Particle Current Fitness Cost: 0.010309278350515464
+Particle Best Fitness Cost: 0.007575757575757576
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 6
+Vehicles Arrived: 131
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 9402.0
+Vehicles Total Wait Time: 2548.0
+Particle Current Fitness Cost: 0.007633587786259542
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 7
+Vehicles Arrived: 88
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11672.0
+Vehicles Total Wait Time: 4354.0
+Particle Current Fitness Cost: 0.011363636363636364
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 8
+Vehicles Arrived: 88
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11337.0
+Vehicles Total Wait Time: 4792.0
+Particle Current Fitness Cost: 0.011363636363636364
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 9
+Vehicles Arrived: 103
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 11436.0
+Vehicles Total Wait Time: 4721.0
+Particle Current Fitness Cost: 0.009708737864077669
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 32
+Particle: 10
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 6047.0
+Vehicles Total Wait Time: 491.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 1
+Vehicles Arrived: 150
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 6725.0
+Vehicles Total Wait Time: 786.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 2
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5288.0
+Vehicles Total Wait Time: 119.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 3
+Vehicles Arrived: 96
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10928.0
+Vehicles Total Wait Time: 4281.0
+Particle Current Fitness Cost: 0.010416666666666666
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 4
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 6004.0
+Vehicles Total Wait Time: 299.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 5
+Vehicles Arrived: 104
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 11237.0
+Vehicles Total Wait Time: 4038.0
+Particle Current Fitness Cost: 0.009615384615384616
+Particle Best Fitness Cost: 0.007575757575757576
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 6
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 6257.0
+Vehicles Total Wait Time: 456.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 7
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 8
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 9
+Vehicles Arrived: 105
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 10872.0
+Vehicles Total Wait Time: 4058.0
+Particle Current Fitness Cost: 0.009523809523809525
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 33
+Particle: 10
+Vehicles Arrived: 83
+Vehicles not Arrived: 32
+Vehicles Total Trip Time: 11149.0
+Vehicles Total Wait Time: 4821.0
+Particle Current Fitness Cost: 0.012048192771084338
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 1
+Vehicles Arrived: 157
+Vehicles not Arrived: 9
+Vehicles Total Trip Time: 6281.0
+Vehicles Total Wait Time: 532.0
+Particle Current Fitness Cost: 0.006369426751592357
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 2
+Vehicles Arrived: 126
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 9183.0
+Vehicles Total Wait Time: 2354.0
+Particle Current Fitness Cost: 0.007936507936507936
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 3
+Vehicles Arrived: 112
+Vehicles not Arrived: 28
+Vehicles Total Trip Time: 11193.0
+Vehicles Total Wait Time: 4112.0
+Particle Current Fitness Cost: 0.008928571428571428
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 4
+Vehicles Arrived: 159
+Vehicles not Arrived: 8
+Vehicles Total Trip Time: 6084.0
+Vehicles Total Wait Time: 268.0
+Particle Current Fitness Cost: 0.006289308176100629
+Particle Best Fitness Cost: 0.006289308176100629
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 5
+Vehicles Arrived: 138
+Vehicles not Arrived: 22
+Vehicles Total Trip Time: 9891.0
+Vehicles Total Wait Time: 3291.0
+Particle Current Fitness Cost: 0.007246376811594203
+Particle Best Fitness Cost: 0.007246376811594203
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 6
+Vehicles Arrived: 144
+Vehicles not Arrived: 23
+Vehicles Total Trip Time: 7941.0
+Vehicles Total Wait Time: 1629.0
+Particle Current Fitness Cost: 0.006944444444444444
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 7
+Vehicles Arrived: 68
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 10694.0
+Vehicles Total Wait Time: 3492.0
+Particle Current Fitness Cost: 0.014705882352941176
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 8
+Vehicles Arrived: 91
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11272.0
+Vehicles Total Wait Time: 4538.0
+Particle Current Fitness Cost: 0.01098901098901099
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 9
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 34
+Particle: 10
+Vehicles Arrived: 150
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5712.0
+Vehicles Total Wait Time: 352.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006329113924050633
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 1
+Vehicles Arrived: 99
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 11745.0
+Vehicles Total Wait Time: 4695.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 2
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 3
+Vehicles Arrived: 89
+Vehicles not Arrived: 35
+Vehicles Total Trip Time: 11004.0
+Vehicles Total Wait Time: 4412.0
+Particle Current Fitness Cost: 0.011235955056179775
+Particle Best Fitness Cost: 0.008928571428571428
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 4
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 6650.0
+Vehicles Total Wait Time: 656.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006289308176100629
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 5
+Vehicles Arrived: 56
+Vehicles not Arrived: 36
+Vehicles Total Trip Time: 10179.0
+Vehicles Total Wait Time: 4434.0
+Particle Current Fitness Cost: 0.017857142857142856
+Particle Best Fitness Cost: 0.007246376811594203
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 6
+Vehicles Arrived: 125
+Vehicles not Arrived: 25
+Vehicles Total Trip Time: 10674.0
+Vehicles Total Wait Time: 3428.0
+Particle Current Fitness Cost: 0.008
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 7
+Vehicles Arrived: 123
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9690.0
+Vehicles Total Wait Time: 3741.0
+Particle Current Fitness Cost: 0.008130081300813009
+Particle Best Fitness Cost: 0.007874015748031496
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 8
+Vehicles Arrived: 106
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 10723.0
+Vehicles Total Wait Time: 3541.0
+Particle Current Fitness Cost: 0.009433962264150943
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 9
+Vehicles Arrived: 73
+Vehicles not Arrived: 34
+Vehicles Total Trip Time: 11097.0
+Vehicles Total Wait Time: 4362.0
+Particle Current Fitness Cost: 0.0136986301369863
+Particle Best Fitness Cost: 0.008130081300813009
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 35
+Particle: 10
+Vehicles Arrived: 116
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 10697.0
+Vehicles Total Wait Time: 3685.0
+Particle Current Fitness Cost: 0.008620689655172414
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 1
+Vehicles Arrived: 124
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9920.0
+Vehicles Total Wait Time: 2793.0
+Particle Current Fitness Cost: 0.008064516129032258
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 2
+Vehicles Arrived: 99
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11020.0
+Vehicles Total Wait Time: 3762.0
+Particle Current Fitness Cost: 0.010101010101010102
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 3
+Vehicles Arrived: 156
+Vehicles not Arrived: 10
+Vehicles Total Trip Time: 5977.0
+Vehicles Total Wait Time: 338.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 4
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5924.0
+Vehicles Total Wait Time: 265.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.006289308176100629
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 5
+Vehicles Arrived: 146
+Vehicles not Arrived: 21
+Vehicles Total Trip Time: 6293.0
+Vehicles Total Wait Time: 733.0
+Particle Current Fitness Cost: 0.00684931506849315
+Particle Best Fitness Cost: 0.00684931506849315
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 6
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 7
+Vehicles Arrived: 145
+Vehicles not Arrived: 22
+Vehicles Total Trip Time: 6889.0
+Vehicles Total Wait Time: 1014.0
+Particle Current Fitness Cost: 0.006896551724137931
+Particle Best Fitness Cost: 0.006896551724137931
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 8
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 9
+Vehicles Arrived: 141
+Vehicles not Arrived: 25
+Vehicles Total Trip Time: 8961.0
+Vehicles Total Wait Time: 1955.0
+Particle Current Fitness Cost: 0.0070921985815602835
+Particle Best Fitness Cost: 0.0070921985815602835
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 36
+Particle: 10
+Vehicles Arrived: 154
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5196.0
+Vehicles Total Wait Time: 82.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 1
+Vehicles Arrived: 150
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5712.0
+Vehicles Total Wait Time: 352.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 2
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 3
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 6004.0
+Vehicles Total Wait Time: 299.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 4
+Vehicles Arrived: 153
+Vehicles not Arrived: 14
+Vehicles Total Trip Time: 6151.0
+Vehicles Total Wait Time: 356.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.006289308176100629
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 5
+Vehicles Arrived: 150
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5712.0
+Vehicles Total Wait Time: 352.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.006666666666666667
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 6
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 6156.0
+Vehicles Total Wait Time: 471.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 7
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5642.0
+Vehicles Total Wait Time: 107.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 8
+Vehicles Arrived: 157
+Vehicles not Arrived: 10
+Vehicles Total Trip Time: 5315.0
+Vehicles Total Wait Time: 81.0
+Particle Current Fitness Cost: 0.006369426751592357
+Particle Best Fitness Cost: 0.006369426751592357
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 9
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5992.0
+Vehicles Total Wait Time: 349.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 37
+Particle: 10
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 6323.0
+Vehicles Total Wait Time: 740.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 1
+Vehicles Arrived: 156
+Vehicles not Arrived: 10
+Vehicles Total Trip Time: 5977.0
+Vehicles Total Wait Time: 338.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 2
+Vehicles Arrived: 129
+Vehicles not Arrived: 30
+Vehicles Total Trip Time: 9529.0
+Vehicles Total Wait Time: 2167.0
+Particle Current Fitness Cost: 0.007751937984496124
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 3
+Vehicles Arrived: 150
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 6164.0
+Vehicles Total Wait Time: 533.0
+Particle Current Fitness Cost: 0.006666666666666667
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 4
+Vehicles Arrived: 151
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5684.0
+Vehicles Total Wait Time: 238.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006289308176100629
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 5
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5793.0
+Vehicles Total Wait Time: 324.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006578947368421052
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 6
+Vehicles Arrived: 140
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 8932.0
+Vehicles Total Wait Time: 1473.0
+Particle Current Fitness Cost: 0.007142857142857143
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 7
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 6939.0
+Vehicles Total Wait Time: 668.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 8
+Vehicles Arrived: 100
+Vehicles not Arrived: 31
+Vehicles Total Trip Time: 11339.0
+Vehicles Total Wait Time: 3661.0
+Particle Current Fitness Cost: 0.01
+Particle Best Fitness Cost: 0.006369426751592357
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 9
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 6004.0
+Vehicles Total Wait Time: 299.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 38
+Particle: 10
+Vehicles Arrived: 157
+Vehicles not Arrived: 10
+Vehicles Total Trip Time: 6733.0
+Vehicles Total Wait Time: 750.0
+Particle Current Fitness Cost: 0.006369426751592357
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 1
+Vehicles Arrived: 131
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 9822.0
+Vehicles Total Wait Time: 2643.0
+Particle Current Fitness Cost: 0.007633587786259542
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 2
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 3
+Vehicles Arrived: 140
+Vehicles not Arrived: 26
+Vehicles Total Trip Time: 8739.0
+Vehicles Total Wait Time: 1049.0
+Particle Current Fitness Cost: 0.007142857142857143
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 4
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5889.0
+Vehicles Total Wait Time: 305.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006289308176100629
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 5
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 5882.0
+Vehicles Total Wait Time: 271.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 6
+Vehicles Arrived: 148
+Vehicles not Arrived: 19
+Vehicles Total Trip Time: 6323.0
+Vehicles Total Wait Time: 740.0
+Particle Current Fitness Cost: 0.006756756756756757
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 7
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 6212.0
+Vehicles Total Wait Time: 424.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 8
+Vehicles Arrived: 154
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5125.0
+Vehicles Total Wait Time: 69.0
+Particle Current Fitness Cost: 0.006493506493506494
+Particle Best Fitness Cost: 0.006369426751592357
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 9
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 6004.0
+Vehicles Total Wait Time: 299.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 39
+Particle: 10
+Vehicles Arrived: 152
+Vehicles not Arrived: 15
+Vehicles Total Trip Time: 5793.0
+Vehicles Total Wait Time: 324.0
+Particle Current Fitness Cost: 0.006578947368421052
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 1
+Vehicles Arrived: 153
+Vehicles not Arrived: 13
+Vehicles Total Trip Time: 5886.0
+Vehicles Total Wait Time: 386.0
+Particle Current Fitness Cost: 0.006535947712418301
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 2
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5453.0
+Vehicles Total Wait Time: 165.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 3
+Vehicles Arrived: 156
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 6156.0
+Vehicles Total Wait Time: 471.0
+Particle Current Fitness Cost: 0.00641025641025641
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 4
+Vehicles Arrived: 151
+Vehicles not Arrived: 16
+Vehicles Total Trip Time: 5889.0
+Vehicles Total Wait Time: 305.0
+Particle Current Fitness Cost: 0.006622516556291391
+Particle Best Fitness Cost: 0.006289308176100629
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 5
+Vehicles Arrived: 136
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 8604.0
+Vehicles Total Wait Time: 1463.0
+Particle Current Fitness Cost: 0.007352941176470588
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 6
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 5664.0
+Vehicles Total Wait Time: 181.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.00641025641025641
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 7
+Vehicles Arrived: 121
+Vehicles not Arrived: 29
+Vehicles Total Trip Time: 10538.0
+Vehicles Total Wait Time: 1027.0
+Particle Current Fitness Cost: 0.008264462809917356
+Particle Best Fitness Cost: 0.006493506493506494
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 8
+Vehicles Arrived: 157
+Vehicles not Arrived: 11
+Vehicles Total Trip Time: 5419.0
+Vehicles Total Wait Time: 104.0
+Particle Current Fitness Cost: 0.006369426751592357
+Particle Best Fitness Cost: 0.006369426751592357
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 9
+Vehicles Arrived: 155
+Vehicles not Arrived: 12
+Vehicles Total Trip Time: 6004.0
+Vehicles Total Wait Time: 299.0
+Particle Current Fitness Cost: 0.0064516129032258064
+Particle Best Fitness Cost: 0.0064516129032258064
+Global Best particle: 0.006289308176100629
+---------------------Independent run: 2---------------------
+Iteration: 40
+Particle: 10
+Vehicles Arrived: 134
+Vehicles not Arrived: 27
+Vehicles Total Trip Time: 9101.0
+Vehicles Total Wait Time: 2085.0
+Particle Current Fitness Cost: 0.007462686567164179
+Particle Best Fitness Cost: 0.006329113924050633
+Global Best particle: 0.006289308176100629
+
